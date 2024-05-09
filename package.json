@@ -28,7 +28,7 @@
   "license": "0BSD",
   "scripts": {
     "build": "gatsby build",
-    "deploy": "NODE_OPTIONS=--openssl-legacy-provider gatsby build && cp CNAME public/ && gh-pages -d public",
+    "deploy": "gatsby build && cp CNAME public/ && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
