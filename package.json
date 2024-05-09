@@ -19,6 +19,7 @@
     "styled-media-query": "^2.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "prettier": "^2.8.8"
   },
   "keywords": [
