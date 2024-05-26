@@ -14,8 +14,7 @@ const Accordion = ({ title, content }) => {
     return (
         <S.AccordionBox className={`accordion ${accordionStatus ? "uncollapsed" : 'collapsed'}`}>
             <S.AccordionButton onClick={onClicked}>
-                <S.Arrow class="arrow" />{title}
-                
+                {title}
             </S.AccordionButton>
             <S.AccordionPanel className="accordion-panel">
                 {content}

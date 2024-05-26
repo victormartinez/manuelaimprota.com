@@ -102,11 +102,6 @@ export const AccordionBox = styled.div`
     }
 `
 
-export const Arrow = styled(ArrowDownCircleFill)`
-    width: 1em;
-    color: #C5AC8E;
-    margin-right: 1em;
-`
 export const AccordionButton = styled.button``
 export const AccordionPanel = styled.div`
     p {
