@@ -5,7 +5,7 @@ import * as S from "./styled"
 const Services = () => {
   return (
     <S.Container>
-      <S.Title>{`Como posso te ajudar`}</S.Title>
+      <S.Title>Como posso te ajudar</S.Title>
       <S.Description>
         A terapia permite dar suporte aos mais variados espectros da sua vida, desde enfrentar desafios emocionais como ansiedade e depressão até lidar com questões complexas de relacionamento, autoestima e desenvolvimento pessoal.
       </S.Description>

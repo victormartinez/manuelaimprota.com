@@ -1,6 +1,4 @@
 import styled from "styled-components"
-import {ArrowDownCircleFill} from '@styled-icons/bootstrap'
-
 
 export const AccordionBox = styled.div`
     $accordion-primary: #E2D8CF;

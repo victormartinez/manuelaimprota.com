@@ -9,10 +9,26 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Manuela Improta | Psicóloga Clínica e Pós-Graduanda em Psicologia Analítica`,
-    description: `Ajudo você a cuidar da sua saúde mental e romper barreiras negativas que impedem de alcançar seus objetivos.`,
-    author: `@manuelaimprota`,
+    title: `Psicóloga Clínica e Pós-Graduanda em Psicologia Analítica`,
+    description: `Psicóloga Manuela Improta | Ajudo você a cuidar da sua saúde mental e romper barreiras negativas que te impedem de alcançar seus objetivos.`,
+    author: `Manuela Improta`,
     siteUrl: `https://manuelaimprota.com`,
+    email: `manuelaimprotamdias@gmail.com`,
+    instagram: `https://www.instagram.com/psimanuelaimprota/`,
+    whatsLink: `https://wa.me/71999889229?text=Olá, acessei o seu site e gostaria de mais informações sobre a terapia`,
+    keywords: [
+      "psicologia",
+      "psi",
+      "psicoterapia",
+      "saúde",
+      "mental",
+      "analítica",
+      "jung",
+      "ansiedade",
+      "burnout",
+      "depressão",
+    ],
+
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -25,19 +41,6 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    // {
-    //   resolve: `gatsby-plugin-manifest`,
-    //   options: {
-    //     name: `gatsby-starter-default`,
-    //     short_name: `starter`,
-    //     start_url: `/`,
-    //     background_color: `#663399`,
-    //     // This will impact how browsers show your PWA/website
-    //     // https://css-tricks.com/meta-theme-color-and-trickery/
-    //     // theme_color: `#663399`,
-    //     display: `minimal-ui`,
-    //     icon: `src/images/favicon.ico`, // This path is relative to the root of the site.
-    //   },
-    // },
+    `gatsby-plugin-styled-components`,
   ],
 }

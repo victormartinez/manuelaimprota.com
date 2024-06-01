@@ -4,10 +4,7 @@ import * as S from "./styled"
 import Accordion from "../Accordion"
 
 
-const Faq = () => {
-  const message = `Olá, acessei o seu site e gostaria de mais informações sobre a terapia`
-  const phoneNumber = `71999889229`
-  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`
+const Faq = ( { whatsLink }) => {
   const accordionData = [
     {
       title: (
@@ -60,7 +57,7 @@ const Faq = () => {
       content: (
         <>
           <p>
-            Basta entrar em contato por meio dos botões disponíveis no site. Você será redirecionado automaticamente para meu whatsapp <a class="faq-whats" href={whatsappUrl} target="_blank" rel="noopener noreferrer">(71 99988-9229)</a> e onde te passarei maiores detalhes.
+            Basta entrar em contato por meio dos botões disponíveis no site. Você será redirecionado automaticamente para meu whatsapp <a class="faq-whats" href={whatsLink} target="_blank" rel="noopener noreferrer">(71 99988-9229)</a> e onde te passarei maiores detalhes.
           </p>
         </>
       )

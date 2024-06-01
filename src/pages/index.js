@@ -1,5 +1,6 @@
 import * as React from "react"
 
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import GlobalStyles from "../styles/global"
 import Seo from "../components/seo"
@@ -14,27 +15,59 @@ import Phrase from "../components/Phrase"
 import WhatsAppFloating from "../components/WhatsAppFloating"
 import MadeBy from "../components/MadeBy"
 
-const IndexPage = () => (
-  <Layout>
-    <GlobalStyles />
-    <TopBar />
-    <Phrase />
-    <About />
-    <Services />
-    <Testimony />
-    <Faq />
-    <Contact />
-    <Footer />
-    <WhatsAppFloating />
-    <MadeBy />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
-export const Head = () => <Seo title="Home" />
+    const title = data.site.siteMetadata.title
+    const description = data.site.siteMetadata.description
+    const author = data.site.siteMetadata.author
+    const email = data.site.siteMetadata.email
+    const instagram = data.site.siteMetadata.instagram
+    const whatsLink = data.site.siteMetadata.whatsLink
+    const keywords = data.site.siteMetadata.keywords
+
+    return (
+      <>
+        <Seo
+          title={`${author} | ${title}`}
+          description={`${description}`}
+          keywords={keywords.join(", ")}
+        />
+      <Layout>
+        <GlobalStyles />
+        <TopBar />
+        <Phrase />
+        <About whatsLink={whatsLink} />
+        <Services />
+        <Testimony />
+        <Faq whatsLink={whatsLink} />
+        <Contact whatsLink={whatsLink} />
+        <Footer 
+          email={email}
+          instagram={instagram}
+          whatsLink={whatsLink}
+        />
+        <WhatsAppFloating whatsLink={whatsLink} />
+        <MadeBy />
+      </Layout>
+    </>
+  )
+}
 
 export default IndexPage
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        description
+        author
+        siteUrl
+        email
+        instagram
+        whatsLink
+        keywords
+      }
+    }
+  }
+`

@@ -5,12 +5,12 @@ import WhatsAppButton from "../WhatsAppButton"
 
 import * as S from "./styled"
 
-const Contact = () => {
+const Contact = ( { whatsLink }) => {
   return (
     <S.ContactContainer>
-      <S.Title>{`Lembre-se:`}</S.Title>
+      <S.Title>Lembre-se:</S.Title>
       <br />
-      <S.SubTitle>{`sua jornada não precisa ser solitária`}</S.SubTitle>
+      <S.SubTitle>sua jornada não precisa ser solitária</S.SubTitle>
       <S.ImageBox>
         <StaticImage
           src="../../images/ornament.png"
@@ -25,7 +25,7 @@ const Contact = () => {
       </S.ImageBox>
       <WhatsAppButton 
         label="Entrar em contato"
-        message="Olá, gostaria de ter mais detalhes sobre a terapia." 
+        whatsLink={whatsLink}
       />
     </S.ContactContainer>
   )

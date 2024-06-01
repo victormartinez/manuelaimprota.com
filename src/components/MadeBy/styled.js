@@ -6,8 +6,7 @@ export const MadeByContainer = styled.div`
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  height: 4vh;
-  padding-top: 1.5em;
+  padding: 0.6em 0 0.5em 0;
 `
 
 export const Description = styled.p`

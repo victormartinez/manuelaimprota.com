@@ -8,13 +8,11 @@ const TopBar = () => {
     <S.TopBarHeader>
       <S.TopBarContainer>
         <StaticImage
-            src="../../images/logo-manuela-novo.png"
-            loading="eager"
-            quality={100}
+            src="../../images/logo.png"
+            width={400}
             formats={["auto", "webp", "avif"]}
             alt={`Manuela Improta - Psicóloga Clínica`}
-            style={{
-            }}
+            style={{}}
         />
       </S.TopBarContainer>
     </S.TopBarHeader>

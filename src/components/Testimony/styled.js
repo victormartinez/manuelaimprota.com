@@ -17,6 +17,10 @@ export const TestimonyContainer = styled.div`
   background-attachment: fixed;
   background-size: cover;
   background-position: center center;
+
+  ${media.lessThan("medium")`
+    background-image: None;
+  `}
 `
 
 export const Title = styled.h2`
@@ -24,6 +28,10 @@ export const Title = styled.h2`
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
   color: white;
+
+  ${media.lessThan("medium")`
+    color: #212529;
+  `}
 `
 
 export const Testimonials = styled.div`

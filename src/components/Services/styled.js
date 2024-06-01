@@ -27,7 +27,7 @@ export const Title = styled.h2`
 `
 
 export const Description = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   margin: 0 auto;
   line-height: 1.5;
   text-align: center;
@@ -39,9 +39,6 @@ export const Services = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 2em;
-
-  ${media.lessThan("large")`
-  `}
 `
 
 

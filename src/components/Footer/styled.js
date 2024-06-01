@@ -52,6 +52,7 @@ export const SocialIcons = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  font-size: 1.5em;
 `
 
 export const EmailIcon = styled(Email)`

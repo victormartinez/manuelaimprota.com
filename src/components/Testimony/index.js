@@ -6,13 +6,13 @@ import * as S from "./styled"
 const Testimony = () => {
   return (
     <S.TestimonyContainer>
-      <S.Title>{`Depoimentos`}</S.Title>
+      <S.Title>Depoimentos</S.Title>
 
       <S.Testimonials>
         <S.Testimony>
           <S.QuotesLeftIcon />
           <S.QuoteText>
-            A terapia transformou minha vida. Ela me ajuda a superar desafios emocionais que eu enfrentava há anos. Estou muito grata pelo apoio e orientação que recebi durante nosso tempo juntos. <br /> - V.M.
+            A terapia transformou minha vida. Ela me ajuda a superar desafios emocionais que eu enfrentava há anos. Estou muito grata pelo apoio e orientação que recebi durante nosso tempo juntos. <br /> - N.D.
           </S.QuoteText>
         </S.Testimony>
         <S.Testimony>
@@ -36,18 +36,6 @@ const Testimony = () => {
           </S.QuoteText>
         </S.Testimony>
       </S.Testimonials>
-      
-        {/* <S.Testimony>
-          <S.QuoteText>
-            O ambiente acolhedor me fizeram sentir confortável desde o primeiro dia. Estou impressionado com sua habilidade de entender minhas necessidades e me orientar no caminho para o crescimento pessoal. <br /> - H.F.
-          </S.QuoteText>
-        </S.Testimony>
-        <S.Testimony>
-          <S.QuoteText>
-            Eu estava cético em relação à terapia no início, mudei completamente minha perspectiva. Estou muito grato por ter encontrado uma profissional tão talentosa e dedicada para me ajudar em minha jornada de autoconhecimento e cura emocional. <br /> - I.A.
-          </S.QuoteText>
-        </S.Testimony> */}
-      {/* </S.Testimonials> */}
     </S.TestimonyContainer>
   )
 }

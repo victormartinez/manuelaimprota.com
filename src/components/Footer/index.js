@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import * as S from "./styled"
 
-const Footer = () => {
+const Footer = ( {email, instagram, whatsLink} ) => {
   return (
     <S.FooterContainer>
       <StaticImage
@@ -19,19 +19,18 @@ const Footer = () => {
         <S.SocialTitle><S.ContactTitle>Contato</S.ContactTitle></S.SocialTitle>
 
         <S.SocialIcons>
-          <S.Link href="mailto:manuelaimprotamdias@gmail.com" target="_blank" rel="noopener noreferrer">
+          <S.Link href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
             <S.EmailIcon />
           </S.Link>
           
-          <S.Link href="https://www.instagram.com/psimanuelaimprota/" target="_blank" rel="noopener noreferrer">
+          <S.Link href={instagram} target="_blank" rel="noopener noreferrer">
             <S.InstagramIcon />
           </S.Link>
           
-          <S.Link href="https://wa.me/71999889229?text=" rel="noopener noreferrer">
+          <S.Link href={whatsLink} rel="noopener noreferrer">
             <S.WhatsIcon />
           </S.Link>
         </S.SocialIcons>
-        
       </S.Social>
     </S.FooterContainer>
   )
