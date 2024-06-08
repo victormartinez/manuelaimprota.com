@@ -6,7 +6,7 @@ export const Anchor = styled.a`
 export const Button = styled.button`
   background-color: #9c6644;
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;

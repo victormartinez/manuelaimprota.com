@@ -5,7 +5,9 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as S from "./styled"
 
 const About = ( { whatsLink } ) => {
-  const imgAlt = `Manuela Improta - Psicóloga Clínica e Pós-Graduanda em Psicologia Analítica`
+  const imgAlt = `Manuela Improta - Psicóloga Clínica`
+  const imgDesc = `Pós-Graduanda em Psicologia Analítica`
+  const crp = `CRP 03/30689`
   return (
     <S.AboutContainer>
       <S.AboutImage>
@@ -20,7 +22,7 @@ const About = ( { whatsLink } ) => {
               height: `100%`,
             }}
           />
-          <S.AboutImageCaption>{imgAlt}</S.AboutImageCaption>
+          <S.AboutImageCaption>{imgAlt} <br /> { imgDesc } <br /> {crp}</S.AboutImageCaption>
         </S.ImageBox>  
       </S.AboutImage>
 
