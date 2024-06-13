@@ -17,8 +17,12 @@ module.exports = {
     instagram: `https://www.instagram.com/psimanuelaimprota/`,
     whatsLink: `https://wa.me/71999889229?text=Olá, acessei o seu site e gostaria de mais informações sobre a terapia`,
     keywords: [
+      "psicóloga",
+      "psicólogo",
+      "salvador",
       "psicologia",
-      "psi",
+      "terapia",
+      "online",
       "psicoterapia",
       "saúde",
       "mental",
