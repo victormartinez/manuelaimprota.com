@@ -55,7 +55,7 @@ export const FooterBoxTitle = styled.h3`
 `
 
 export const FooterBoxDescription = styled.p`
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
   line-height: 1.2rem;
 `
 
