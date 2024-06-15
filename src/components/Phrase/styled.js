@@ -12,7 +12,8 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 60%;
-  padding: 4em 0;
+  padding: 8em 0 4em 0;
+  margin-bottom: 100px;
 `
 
 
@@ -21,7 +22,7 @@ export const Title = styled.h2`
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
   line-height: 3.5rem;
-  width: 60vw;
+  width: 50vw;
   margin-bottom: 1em;
 
   ${media.lessThan("medium")`

@@ -27,7 +27,7 @@ export const Title = styled.h2`
   margin-bottom: 1em;
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
-  color: white;
+  color: black;
 
   ${media.lessThan("medium")`
     color: #212529;
@@ -37,7 +37,7 @@ export const Title = styled.h2`
 export const Testimonials = styled.div`
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  width: 52%;
 
   ${media.lessThan("medium")`
     justify-content: center;
@@ -52,7 +52,7 @@ export const Testimony = styled.div`
   flex-direction: column;
   font-style: italic;
   font-size: 1.1rem;
-  width: 35vw;
+  width: 25vw;
 
   border-radius: 10px;
   margin-bottom: 2em;

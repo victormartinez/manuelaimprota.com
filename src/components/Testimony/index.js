@@ -5,7 +5,7 @@ import * as S from "./styled"
 
 const Testimony = () => {
   return (
-    <S.TestimonyContainer>
+    <S.TestimonyContainer id="testimonySection">
       <S.Title>Depoimentos</S.Title>
 
       <S.Testimonials>

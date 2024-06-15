@@ -14,7 +14,7 @@ import Contact from "../components/Contact"
 import Footer from "../components/Footer"
 import Phrase from "../components/Phrase"
 import WhatsAppFloating from "../components/WhatsAppFloating"
-import MadeBy from "../components/MadeBy"
+import TherapyOnline from "../components/TherapyOnline"
 
 const IndexPage = ({ data }) => {
 
@@ -35,10 +35,11 @@ const IndexPage = ({ data }) => {
         />
       <Layout>
         <GlobalStyles />
-        <TopBar />
+        <TopBar whatsLink={whatsLink} />
         <Phrase />
         <About whatsLink={whatsLink} />
         <Services />
+        <TherapyOnline whatsLink={whatsLink} />
         <Testimony />
         <Faq whatsLink={whatsLink} />
         <Contact whatsLink={whatsLink} />
@@ -48,7 +49,6 @@ const IndexPage = ({ data }) => {
           whatsLink={whatsLink}
         />
         <WhatsAppFloating whatsLink={whatsLink} />
-        <MadeBy />
       </Layout>
     </>
   )

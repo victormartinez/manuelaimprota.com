@@ -1,5 +1,6 @@
 import React from "react"
 import WhatsAppButton from "../WhatsAppButton"
+import DetailsButton from "../DetailsButton"
 import { StaticImage } from "gatsby-plugin-image"
 
 import * as S from "./styled"
@@ -9,7 +10,7 @@ const About = ( { whatsLink } ) => {
   const imgDesc = `Pós-Graduanda em Psicologia Analítica`
   const crp = `CRP 03/30689`
   return (
-    <S.AboutContainer>
+    <S.AboutContainer id="aboutSection">
       <S.AboutImage>
         <S.ImageBox>
           <StaticImage
@@ -18,9 +19,7 @@ const About = ( { whatsLink } ) => {
             quality={100}
             formats={["auto", "webp", "avif"]}
             alt={imgAlt}
-            style={{ 
-              height: `100%`,
-            }}
+            height={450}
           />
           <S.AboutImageCaption>{imgAlt} <br /> { imgDesc } <br /> {crp}</S.AboutImageCaption>
         </S.ImageBox>  
@@ -29,14 +28,22 @@ const About = ( { whatsLink } ) => {
       <S.About>
         <S.AboutTextBox>
           <S.Title>{`Olá, eu sou Manuela Improta`}</S.Title>
-          <S.Description>Às vezes, o primeiro passo para buscar apoio emocional pode parecer desafiador, mas saiba que você não está sozinho(a). Estou aqui para oferecer um espaço seguro e acolhedor, onde podemos explorar juntos os desafios que você enfrenta. Sua jornada de autoconhecimento e bem-estar começa com um simples gesto: <S.SendMessageLink href={whatsLink} target="_blank">enviar uma mensagem</S.SendMessageLink>. Estou ansiosa para ouvir sua história e oferecer o suporte necessário para que você possa florescer.</S.Description>
+          <S.Description>
+            Sou Psicóloga Clínica e ajudo pessoas que buscam acolhimento para lidar com diversos desafios. Por meio da abordagem Junguiana ajudo meus pacientes a entenderem melhor a si mesmos e suas experiências. 
+
+            <br /><br />
+            
+            Às vezes, o primeiro passo pode parecer desafiador, mas saiba que você não está sozinho(a). Sua jornada de autoconhecimento e bem-estar começa agora.
+          </S.Description>
         </S.AboutTextBox>
 
         <S.SendMessageBox>
           <WhatsAppButton 
-            label="Enviar uma mensagem"
+            label="Agende sua sessão"
             whatsLink={whatsLink}
+            icon={true}
           />
+          <DetailsButton label="Saber mais" />
         </S.SendMessageBox>
       </S.About>
     </S.AboutContainer>

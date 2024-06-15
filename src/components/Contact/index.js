@@ -1,19 +1,17 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import WhatsAppButton from "../WhatsAppButton"
-
 import * as S from "./styled"
 
 const Contact = ( { whatsLink }) => {
   return (
     <S.ContactContainer>
-      <S.Title>Lembre-se:</S.Title>
+      <S.Title>Sua jornada de autoconhecimento e bem-estar</S.Title>
       <br />
-      <S.SubTitle>sua jornada não precisa ser solitária</S.SubTitle>
+      <S.SubTitle>começa agora</S.SubTitle>
       <S.ImageBox>
         <StaticImage
-          src="../../images/ornament.png"
+          src="../../images/ornament-black.png"
           loading="eager"
           quality={100}
           formats={["auto", "webp", "avif"]}
@@ -23,10 +21,6 @@ const Contact = ( { whatsLink }) => {
           }}
         />
       </S.ImageBox>
-      <WhatsAppButton 
-        label="Entrar em contato"
-        whatsLink={whatsLink}
-      />
     </S.ContactContainer>
   )
 }

@@ -9,14 +9,10 @@ export const AboutContainer = styled.div`
   margin: 0 auto;
   width: 65em;
 
-  padding-top: 50px;
-  margin-bottom: 100px;
-
   ${media.lessThan("large")`
     flex-direction: column;
     align-items: center;
     width: 80vw;
-
   `}
 
 `
@@ -101,25 +97,11 @@ export const About = styled.div`
 `
 
 export const SendMessageBox = styled.div`
-  margin-top: 1em;
-  // ${media.lessThan("medium")`
-  //   width: 60vw;
-  //   margin: 0 auto;
-  // `}
-
-  // ${media.between("medium", "large")`
-  //   width: 30vw;
-  //   margin: 0 auto;
-  // `}
-
-  // ${media.greaterThan("large")`
-  //   width: 30vw;
-  //   margin: 0 auto;
-  // `}
-
-  // ${media.greaterThan("medium")`
-  //   margin-top: 1em;
-  // `}
+display: flex;
+justify-content: space-between;
+width: 22em;  
+margin-top: 1em;
+  
 
 `
 
@@ -130,4 +112,5 @@ export const AboutImageCaption = styled.figcaption`
   text-align: center;
   font-style: italic;
   color: #6c757d;
+  margin-right: 2em;
 `

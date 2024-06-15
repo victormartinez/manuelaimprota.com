@@ -16,7 +16,6 @@ export const Title = styled.h2`
   margin-bottom: 1em;
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
-  color: #9c6644;
 
   ${media.lessThan("large")`
     font-size: 1.2rem;
@@ -24,7 +23,7 @@ export const Title = styled.h2`
 `
 
 export const AccordionSection = styled.div`
-  width: 70%;
+  width: 50vw;
 
   ${media.lessThan("medium")`
     width: 90%;

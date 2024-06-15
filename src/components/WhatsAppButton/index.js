@@ -2,10 +2,14 @@ import React from "react"
 import * as S from "./styled"
 
 
-const WhatsAppButton = ({ whatsLink, label }) => {
+const WhatsAppButton = ({ whatsLink, label, icon = true }) => {
   return (
     <S.Anchor href={whatsLink} target="_blank" rel="noopener noreferrer">
-        <S.Button>{label}</S.Button>
+        <S.Button>
+          { icon ? <S.Icon /> : ''}
+          
+          {label}
+        </S.Button>
     </S.Anchor>
   )
 }

@@ -99,7 +99,7 @@ const Faq = ( { whatsLink }) => {
   ]
 
   return (
-    <S.FaqContainer>
+    <S.FaqContainer id="faqSession">
       <S.Title>{`Dúvidas Frequentes`}</S.Title>
 
       <S.AccordionSection>

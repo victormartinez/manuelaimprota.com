@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Psicóloga Clínica e Pós-Graduanda em Psicologia Analítica`,
+    title: `Psicóloga Clínica`,
     description: `Psicóloga Manuela Improta | Ajudo você a cuidar da sua saúde mental e romper barreiras negativas que te impedem de alcançar seus objetivos.`,
     author: `Manuela Improta`,
     siteUrl: `https://manuelaimprota.com`,

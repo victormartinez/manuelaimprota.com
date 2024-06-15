@@ -6,8 +6,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 60em;
-  margin-bottom: 150px;
+  width: 65em;
+  padding: 150px 0 0 0;
 
 
   ${media.lessThan("large")`
@@ -22,7 +22,6 @@ export const Title = styled.h2`
   margin-bottom: 1em;
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
-  color: #9c6644;
   text-align: center;
 `
 

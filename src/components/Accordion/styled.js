@@ -5,7 +5,7 @@ export const AccordionBox = styled.div`
     $accordion-orange: #C5AC8E;
 
     color: $accordion-primary;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     &::before {
         content: "";
@@ -15,10 +15,10 @@ export const AccordionBox = styled.div`
         border-bottom-left-radius: 10px;
         margin-left: -5px;
         width: 10px;
-        height: 100%;
     }
 
     button {
+        border-radius: 10px;
         outline: none;
         padding: 20px;
         border: none;
@@ -101,11 +101,13 @@ export const AccordionBox = styled.div`
 `
 
 export const AccordionButton = styled.button``
+
 export const AccordionPanel = styled.div`
     p {
         padding-top: 0.6em;
         line-height: 1.4rem;
       	color: #212529;
+        font-size: 1.1rem;
     }
     
 `
