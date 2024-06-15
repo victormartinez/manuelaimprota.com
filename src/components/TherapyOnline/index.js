@@ -14,10 +14,9 @@ const TherapyOnline = () => {
         <S.BoxContainer>
           <S.Box>
             <S.BoxHeading>Atendimento Particular</S.BoxHeading>
-            
-            <S.P><S.CheckIcon /> Sessões individais, casais e família</S.P>
-            <S.P><S.CheckIcon /> Adolescentes, adultos e idosos</S.P>
-            <S.P><S.CheckIcon /> Acompanhamento de curto, médio e longo prazo</S.P>
+            <S.P><S.CheckIcon /> Sessões individuais</S.P>
+            <S.P><S.CheckIcon /> Adultos e idosos</S.P>
+            <S.P><S.CheckIcon /> Abordagem Junguiana</S.P>
           </S.Box>
           <S.Box>
             <S.BoxHeading>No seu horário</S.BoxHeading>
