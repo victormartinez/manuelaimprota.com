@@ -5,7 +5,7 @@ export const Anchor = styled.a`
 `
 
 export const Button = styled.button`
-  background-color: #9c6644;
+  background-color: #5EA164;
   color: #fff;
   font-size: 16px;
   text-align: center;
@@ -16,8 +16,12 @@ export const Button = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease;
 
+  ${({ big }) => big && `
+    font-size: 20px;
+  `}
+
   &:hover {
-    background-color: #D4A373;
+    background-color: #6AB38A;
     transform: scale(1.1);
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;

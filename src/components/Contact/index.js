@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import * as S from "./styled"
 
-const Contact = ( { whatsLink }) => {
+const Contact = ( ) => {
   return (
     <S.ContactContainer>
       <S.Title>Sua jornada de autoconhecimento e bem-estar</S.Title>

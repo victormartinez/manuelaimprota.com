@@ -5,7 +5,7 @@ import * as S from "./styled"
 
 const TherapyOnline = () => {
   return (
-    <S.OuterRow id="therapyOnlineSection">
+    <S.OuterRow id="atendimento">
       <S.Container>
         <S.Title>Agende seu atendimento online</S.Title>
         <S.Description>
@@ -16,20 +16,20 @@ const TherapyOnline = () => {
             <S.BoxHeading>Atendimento Particular</S.BoxHeading>
             <S.P><S.CheckIcon /> Sessões individuais</S.P>
             <S.P><S.CheckIcon /> Adultos e idosos</S.P>
-            <S.P><S.CheckIcon /> Abordagem Junguiana</S.P>
+            <S.P><S.CheckIcon /> Abordagem Junguiana para promover autoconhecimento e equilíbrio psicológico</S.P>
           </S.Box>
           <S.Box>
             <S.BoxHeading>No seu horário</S.BoxHeading>
-            <S.P><S.CheckIcon /> Seg-Sáb</S.P>
+            <S.P><S.CheckIcon /> De Segunda a Sábado</S.P>
             <S.P><S.CheckIcon /> Online, prático e respeitando seus horários</S.P>
             <S.P><S.CheckIcon /> Para brasileiros residindo no país e no exterior</S.P>
           </S.Box>
         </S.BoxContainer>
         <S.Row>
           <WhatsAppButton 
-            label="Agende sua sessão"
-            whatsLink={``}
-            icon={true}
+            label="Quero mais informações"
+            text="Olá, gostaria de mais informações sobre a terapia."
+            big={true}
           />
         </S.Row>
       </S.Container>

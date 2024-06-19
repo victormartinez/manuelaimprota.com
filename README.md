@@ -97,3 +97,15 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web. And also the best place to build, deploy, and host your Gatsby sites.
 
 <!-- AUTO-GENERATED-CONTENT:END -->
+
+
+
+Mobile: 
+- adicionar botão entre como posso te ajudar e agende seu atendimento.
+- refazer atendimento particular / no seu horário
+- adicionar tooltip no botão do zap
+- aumentar o tamanho do "Agende sua sessão"
+- verificar qualidade da imagem do rodapé
+- load de imagem ainda atrasa
+- trocar as fontes do navbar e do footer
+- melhorar estilização do navbar

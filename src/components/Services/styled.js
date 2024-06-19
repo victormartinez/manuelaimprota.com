@@ -5,6 +5,7 @@ import media from "styled-media-query"
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 0 auto;
   width: 65em;
   padding: 150px 0 0 0;

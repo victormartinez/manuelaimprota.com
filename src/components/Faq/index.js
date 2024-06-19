@@ -1,11 +1,35 @@
 import React from "react"
+import WhatsAppButton from "../WhatsAppButton"
 
 import * as S from "./styled"
 import Accordion from "../Accordion"
 
 
-const Faq = ( { whatsLink }) => {
+const Faq = ( ) => {
+  const whatsLink = `https://wa.me/71999889229?text=`
   const accordionData = [
+    {
+      title: (
+        <>Qual o valor da consulta?</>
+      ),
+      content: (
+        <>
+          <p>O Conselho Federal de Psicologia (CRP) determina que os valores das sessões não sejam divulgados publicamente. Portanto, ao entrar em contato, forneço valores e informações adicionais sobre pacotes.</p>
+        </>
+      )
+    },
+    {
+      title: (
+        <>Quanto tempo dura cada sessão?</>
+      ),
+      content: (
+        <>
+          <p>
+            A duração de cada sessão de terapia pode variar dependendo das necessidades individuais do cliente. Geralmente, elas duram em torno de 50 minutos.
+          </p>
+        </>
+      )
+    },
     {
       title: (
         <>De que forma a terapia pode me ajudar?</>
@@ -28,18 +52,6 @@ const Faq = ( { whatsLink }) => {
     },
     {
       title: (
-        <>Quanto tempo dura cada sessão?</>
-      ),
-      content: (
-        <>
-          <p>
-            A duração de cada sessão de terapia pode variar dependendo das necessidades individuais do cliente. Geralmente, elas duram em torno de 50 minutos.
-          </p>
-        </>
-      )
-    },
-    {
-      title: (
         <>Terapia online funciona?</>
       ),
       content: (
@@ -57,7 +69,7 @@ const Faq = ( { whatsLink }) => {
       content: (
         <>
           <p>
-            Basta entrar em contato por meio dos botões disponíveis no site. Você será redirecionado automaticamente para meu whatsapp <a class="faq-whats" href={whatsLink} target="_blank" rel="noopener noreferrer">(71 99988-9229)</a> e onde te passarei maiores detalhes.
+            Basta enviar uma mensagem clicando <a class="faq-whats" href={whatsLink} target="_blank" rel="noopener noreferrer">aqui</a> para que eu possa te acolher e ajudar no processo de alcançar a sua melhor versão.
           </p>
         </>
       )
@@ -81,18 +93,8 @@ const Faq = ( { whatsLink }) => {
       content: (
         <>
           <p>
-            O pagamento acontece de forma antecipada adquirindo um pacote de sessões que o paciente utiliza durante o mês. Ele pode ser feito por meio de Transferência, Pix ou Boleto.
+            O pagamento acontece de forma antecipada adquirindo um pacote de sessões que o paciente utiliza durante o mês. Ele pode ser feito por meio de Transferência ou Pix.
           </p>
-        </>
-      )
-    },
-    {
-      title: (
-        <>Qual o valor da consulta?</>
-      ),
-      content: (
-        <>
-          <p>O Conselho Federal de Psicologia (CRP) determina que os valores das sessões não sejam divulgados publicamente. Portanto, ao entrar em contato, forneço valores e informações adicionais sobre pacotes.</p>
         </>
       )
     },
@@ -111,7 +113,12 @@ const Faq = ( { whatsLink }) => {
             />
           ))}
       </S.AccordionSection>
-      
+      <br />
+      <WhatsAppButton 
+        label="Fale comigo"
+        text="Olá, poderia me dar mais informações sobre as sessões de terapia?"
+        big={true}
+      />
     </S.FaqContainer>
   )
 }

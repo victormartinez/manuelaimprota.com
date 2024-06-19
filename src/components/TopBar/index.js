@@ -5,7 +5,7 @@ import WhatsAppButton from "../WhatsAppButton"
 import * as S from "./styled"
 
 
-const TopBar = ( { whatsLink }) => {
+const TopBar = ( ) => {
   return (
     <S.TopBarHeader>
       <S.TopBarContainer>
@@ -36,7 +36,7 @@ const TopBar = ( { whatsLink }) => {
                 onClick = {(e)=>{
                 e.preventDefault();
                   window.scrollTo({
-                    top: document.querySelector("#aboutSection").offsetTop - 150,
+                    top: document.querySelector("#sobre").offsetTop - 150,
                     behavior: "smooth",
                   });
                 }
@@ -47,7 +47,7 @@ const TopBar = ( { whatsLink }) => {
               onClick = {(e)=>{
                 e.preventDefault();
                   window.scrollTo({
-                    top: document.querySelector("#servicesSection").offsetTop,
+                    top: document.querySelector("#ajuda").offsetTop,
                     behavior: "smooth",
                   });
                 }
@@ -59,7 +59,7 @@ const TopBar = ( { whatsLink }) => {
                 onClick = {(e)=>{
                   e.preventDefault();
                     window.scrollTo({
-                      top: document.querySelector("#therapyOnlineSection").offsetTop,
+                      top: document.querySelector("#atendimento").offsetTop,
                       behavior: "smooth",
                     });
                   }
@@ -93,8 +93,7 @@ const TopBar = ( { whatsLink }) => {
         <S.SendMessageBox>
           <WhatsAppButton 
             label="Agende sua sessão"
-            whatsLink={whatsLink}
-            icon={true}
+            text="Olá, acessei o seu site e gostaria de mais informações sobre a terapia."
           />
         </S.SendMessageBox>
 

@@ -4,7 +4,8 @@ import WhatsAppButton from "../WhatsAppButton"
 
 import * as S from "./styled"
 
-const Footer = ( {instagram, whatsLink} ) => {
+const Footer = ( {instagram } ) => {
+  const whatsLink = `https://wa.me/71999889229?text=Olá, gostaria de mais informações sobre a terapia.`
   return (
     <S.FooterContainer>
       <S.FooterContent>
@@ -24,9 +25,8 @@ const Footer = ( {instagram, whatsLink} ) => {
           <S.FooterBoxTitle>Faça seu agendamento</S.FooterBoxTitle>
           <S.FooterBoxDescription>O processo terapêutico te ajudará a fortalecer sua saúde mental, lidar com os desafios e cultivar uma maior autoconsciência.</S.FooterBoxDescription>
           <WhatsAppButton 
-            label="Agende sua sessão"
-            whatsLink={whatsLink}
-            icon={true}
+            label="Entrar em contato" icon={false} 
+            text="Olá, estou entrando em contato para saber mais informações sobre as sessões de terapia."
           />
         </S.FooterBox>
         

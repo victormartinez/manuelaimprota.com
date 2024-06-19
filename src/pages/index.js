@@ -23,7 +23,6 @@ const IndexPage = ({ data }) => {
     const author = data.site.siteMetadata.author
     const email = data.site.siteMetadata.email
     const instagram = data.site.siteMetadata.instagram
-    const whatsLink = data.site.siteMetadata.whatsLink
     const keywords = data.site.siteMetadata.keywords
 
     return (
@@ -35,20 +34,19 @@ const IndexPage = ({ data }) => {
         />
       <Layout>
         <GlobalStyles />
-        <TopBar whatsLink={whatsLink} />
+        <TopBar />
         <Phrase />
-        <About whatsLink={whatsLink} />
+        <About />
         <Services />
-        <TherapyOnline whatsLink={whatsLink} />
+        <TherapyOnline />
         <Testimony />
-        <Faq whatsLink={whatsLink} />
-        <Contact whatsLink={whatsLink} />
+        <Faq />
+        <Contact />
         <Footer 
           email={email}
           instagram={instagram}
-          whatsLink={whatsLink}
         />
-        <WhatsAppFloating whatsLink={whatsLink} />
+        <WhatsAppFloating />
       </Layout>
     </>
   )
@@ -66,7 +64,6 @@ export const pageQuery = graphql`
         siteUrl
         email
         instagram
-        whatsLink
         keywords
       }
     }

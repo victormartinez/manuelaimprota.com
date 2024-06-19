@@ -99,7 +99,7 @@ export const About = styled.div`
 export const SendMessageBox = styled.div`
 display: flex;
 justify-content: space-between;
-width: 22em;  
+width: 28em;  
 margin-top: 1em;
   
 

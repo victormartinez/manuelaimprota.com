@@ -5,12 +5,12 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import * as S from "./styled"
 
-const About = ( { whatsLink } ) => {
+const About = (  ) => {
   const imgAlt = `Manuela Improta - Psicóloga Clínica`
   const imgDesc = `Pós-Graduanda em Psicologia Analítica`
   const crp = `CRP 03/30689`
   return (
-    <S.AboutContainer id="aboutSection">
+    <S.AboutContainer id="sobre">
       <S.AboutImage>
         <S.ImageBox>
           <StaticImage
@@ -39,11 +39,10 @@ const About = ( { whatsLink } ) => {
 
         <S.SendMessageBox>
           <WhatsAppButton 
-            label="Agende sua sessão"
-            whatsLink={whatsLink}
-            icon={true}
+            label="Quero começar a minha jornada"
+            text="Oi, acessei o seu site e gostaria de começar a minha jornada na terapia."
           />
-          <DetailsButton label="Saber mais" />
+          <DetailsButton label="Mais detalhes" />
         </S.SendMessageBox>
       </S.About>
     </S.AboutContainer>
