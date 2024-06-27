@@ -1,6 +1,5 @@
 import React from "react"
 import WhatsAppButton from "../WhatsAppButton"
-import DetailsButton from "../DetailsButton"
 import { StaticImage } from "gatsby-plugin-image"
 
 import * as S from "./styled"
@@ -42,7 +41,16 @@ const About = (  ) => {
             label="Quero começar a minha jornada"
             text="Oi, acessei o seu site e gostaria de começar a minha jornada na terapia."
           />
-          <DetailsButton label="Mais detalhes" />
+          <S.DetailsButton onClick = {(e)=>{
+            e.preventDefault();
+              window.scrollTo({
+                top: document.querySelector("#servicesSection").offsetTop,
+                behavior: "smooth",
+              });
+            }
+          }>
+            Mais detalhes
+          </S.DetailsButton>
         </S.SendMessageBox>
       </S.About>
     </S.AboutContainer>

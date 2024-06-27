@@ -97,11 +97,15 @@ export const About = styled.div`
 `
 
 export const SendMessageBox = styled.div`
-display: flex;
-justify-content: space-between;
-width: 28em;  
-margin-top: 1em;
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 28em;  
+  margin-top: 1em;
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
 
 `
 
@@ -113,4 +117,37 @@ export const AboutImageCaption = styled.figcaption`
   font-style: italic;
   color: #6c757d;
   margin-right: 2em;
+`
+
+export const DetailsButton = styled.button`
+  background-color: #555555;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 9em;
+
+  ${media.lessThan("medium")`
+    margin-top: 1em;
+  `}
+
+  &:hover {
+    background-color: #aaaaaa;
+    transform: scale(1.1);
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease;
+    
+  }
+
+  &:focus {
+    outline: none;
+  }
 `
