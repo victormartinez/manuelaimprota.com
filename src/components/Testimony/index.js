@@ -12,13 +12,13 @@ const Testimony = () => {
         <S.Testimony>
           <S.QuotesLeftIcon />
           <S.QuoteText>
-            A terapia transformou minha vida. Ela me ajuda a superar desafios emocionais que eu enfrentava há anos. Estou muito grata pelo apoio e orientação que recebi durante nosso tempo juntos. <br /> - N.D.
+            A terapia transformou minha vida. Ela me ajuda a lidar com a ansiedade que eu enfrentava há anos. Estou muito grata pelo apoio que recebi durante nosso tempo juntos. <br /> - N.D.
           </S.QuoteText>
         </S.Testimony>
         <S.Testimony>
           <S.QuotesLeftIcon />
           <S.QuoteText>
-            As habilidades terapêuticas me permitiram explorar questões profundas e encontrar soluções para problemas que pareciam insuperáveis. Sinto-me mais forte e mais confiante graças às nossas sessões. <br /> - A.F.
+            As habilidades terapêuticas me permitiram explorar questões relacionadas à minha depressão. Sinto-me mais forte e mais confiante graças às nossas sessões. <br /> - A.F.
           </S.QuoteText>
         </S.Testimony>
       </S.Testimonials>
@@ -26,7 +26,7 @@ const Testimony = () => {
         <S.Testimony>
           <S.QuotesLeftIcon />
           <S.QuoteText>
-            Encontrar a terapia foi um verdadeiro divisor de águas para mim. A atenção me ajudou a reconectar comigo mesma e a enfrentar meus medos de frente. Estou em um lugar muito melhor emocionalmente. <br /> - M.B.
+            Encontrar a terapia foi um verdadeiro divisor de águas para mim. A atenção me ajudou a reconectar comigo mesma e a superar o término do meu relacionamento. Estou em um lugar muito melhor emocionalmente. <br /> - M.B.
           </S.QuoteText>
         </S.Testimony>
         <S.Testimony>

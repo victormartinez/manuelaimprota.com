@@ -20,6 +20,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   text-align: center;
   font-size: 2rem;
+  color: black;
   font-family: 'Tan Pearl', serif;
   line-height: 3.5rem;
   width: 50vw;

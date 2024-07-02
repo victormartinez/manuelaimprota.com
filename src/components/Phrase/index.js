@@ -7,7 +7,7 @@ import * as S from "./styled"
 const Phrase = () => {
   return (
     <S.Container>
-      <S.Title>{`Ajudo você a cuidar da sua saúde mental e romper barreiras negativas que impedem de alcançar seus objetivos.`}</S.Title>
+      <S.Title>{`Ajudo você a cuidar da sua saúde mental e romper barreiras que impedem de alcançar seus objetivos.`}</S.Title>
 
       <S.ImageBox>
         <StaticImage

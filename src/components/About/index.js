@@ -28,11 +28,11 @@ const About = (  ) => {
         <S.AboutTextBox>
           <S.Title>{`Olá, eu sou Manuela Improta`}</S.Title>
           <S.Description>
-            Sou Psicóloga Clínica e ajudo pessoas que buscam acolhimento para lidar com diversos desafios. Por meio da abordagem Junguiana ajudo meus pacientes a entenderem melhor a si mesmos e suas experiências. 
+            Sou Psicóloga Clínica e por meio da abordagem Junguiana ajudo meus pacientes a lidar desde questões como ansiedade, depressão e transtornos de humor até relacionamentos, falta de confiança e problemas familiares.            
 
             <br /><br />
-            
-            Às vezes, o primeiro passo pode parecer desafiador, mas saiba que você não está sozinho(a). Sua jornada de autoconhecimento e bem-estar começa agora.
+
+            Às vezes, o primeiro passo pode parecer desafiador, mas saiba que você não está sozinho(a). A terapia pode transformar a sua jornada. Vamos conversar?
           </S.Description>
         </S.AboutTextBox>
 
