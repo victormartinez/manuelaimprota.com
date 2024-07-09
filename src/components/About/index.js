@@ -44,7 +44,7 @@ const About = (  ) => {
           <S.DetailsButton onClick = {(e)=>{
             e.preventDefault();
               window.scrollTo({
-                top: document.querySelector("#servicesSection").offsetTop,
+                top: document.querySelector("#ajuda").offsetTop,
                 behavior: "smooth",
               });
             }

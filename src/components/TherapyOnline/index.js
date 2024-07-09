@@ -9,7 +9,7 @@ const TherapyOnline = () => {
       <S.Container>
         <S.Title>Agende seu atendimento online</S.Title>
         <S.Description>
-        Através de técnicas terapêuticas trabalharemos para identificar e compreender as origens dos desafios que você enfrenta. Você aprenderá a cultivar uma maior autoconsciência, resiliência emocional e habilidades para promover mudanças positivas em sua vida.
+          Nossas sessões online visam permitem que você tenha o acolhimento necessário independente de qual cidade residir. Através de técnicas terapêuticas trabalharemos para identificar e compreender as origens dos desafios que você enfrenta.
         </S.Description>
         <S.BoxContainer>
           <S.Box>

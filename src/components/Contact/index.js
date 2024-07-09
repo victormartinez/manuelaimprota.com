@@ -6,9 +6,7 @@ import * as S from "./styled"
 const Contact = ( ) => {
   return (
     <S.ContactContainer>
-      <S.Title>Sua jornada de autoconhecimento e bem-estar</S.Title>
-      <br />
-      <S.SubTitle>começa agora</S.SubTitle>
+      <S.Title>Sua jornada de autoconhecimento e bem-estar começa agora</S.Title>
       <S.ImageBox>
         <StaticImage
           src="../../images/ornament-black.png"

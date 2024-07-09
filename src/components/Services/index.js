@@ -8,7 +8,7 @@ const Services = (  ) => {
     <S.Container id="ajuda">
       <S.Title>Como posso te ajudar</S.Title>
       <S.Description>
-        A terapia permite dar suporte aos mais variados espectros da sua vida, desde enfrentar desafios emocionais como ansiedade e depressão até lidar com questões complexas de relacionamento, autoestima e desenvolvimento pessoal. Meus pacientes me procuram para lidar com problemas variados:
+        A terapia permite dar suporte aos mais variados espectros da sua vida, desde enfrentar desafios emocionais como ansiedade e depressão até lidar com questões complexas de relacionamento, autoestima e desenvolvimento pessoal.
       </S.Description>
       
       <S.Services>

@@ -19,18 +19,14 @@ export const AboutContainer = styled.div`
 
 export const AboutTextBox = styled.div`
   padding-top: 0;
-  margin-left: 4em;
   color: #212529;
-  width: 50em;
 
   ${media.lessThan("medium")`
-    width: 100%;
-    margin-left: 0;
+    width: 80vw;
   `}
 
   ${media.greaterThan("medium")`
     width: 40em;
-    margin-left: 0;
   `}
 
 `
@@ -90,17 +86,17 @@ export const SendMessageLink = styled.a`
 export const About = styled.div`
   display: flex;
   flex-direction: column;
+  width: 80vw;
 
   ${media.lessThan("large")`
     text-align: center;
   `}
+
 `
 
 export const SendMessageBox = styled.div`
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 28em;  
   margin-top: 1em;
 
   ${media.lessThan("medium")`
@@ -131,6 +127,10 @@ export const DetailsButton = styled.button`
   cursor: pointer;
   transition: background-color 0.3s ease;
   width: 9em;
+
+  ${media.greaterThan("small")`
+    margin-left: 1em;
+  `}
 
   ${media.lessThan("medium")`
     margin-top: 1em;

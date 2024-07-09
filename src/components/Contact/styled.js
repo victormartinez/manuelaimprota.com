@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 
 export const ContactContainer = styled.div`
   display: flex;
@@ -14,14 +15,10 @@ export const Title = styled.h2`
   text-align: center;
 
   font-family: 'Tan Pearl', serif;
-`
 
-export const SubTitle = styled.h2`
-  font-size: 2rem;
-  margin-bottom: 1em;
-  text-align: center;
-
-  font-family: 'Tan Pearl', serif;
+  ${media.lessThan("medium")`
+    line-height: 1.2em;
+  `}
 `
 
 export const ImageBox = styled.div`

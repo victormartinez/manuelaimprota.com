@@ -10,7 +10,6 @@ export const Container = styled.div`
   width: 65em;
   padding: 150px 0 0 0;
 
-
   ${media.lessThan("large")`
     flex-direction: column;
     align-items: center;
@@ -24,6 +23,10 @@ export const Title = styled.h2`
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
   text-align: center;
+
+  ${media.lessThan("medium")`
+    line-height: 1.2em;
+  `}
 `
 
 export const Description = styled.p`

@@ -27,6 +27,10 @@ export const Title = styled.h2`
   font-size: 2rem;
   font-family: 'Tan Pearl', serif;
   text-align: center;
+
+  ${media.lessThan("medium")`
+    line-height: 1.2em;
+  `}
 `
 
 export const Description = styled.p`
