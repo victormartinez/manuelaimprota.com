@@ -1,25 +1,17 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "manuelaimprota.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "Site da psicóloga Manuela Improta — Psicóloga Perinatal & Feminina",
+  "version": "1.0.0",
+  "author": "Victor Martinez",
   "dependencies": {
-    "@fontsource-variable/montserrat": "^5.0.18",
-    "@fontsource/satisfy": "^5.0.18",
-    "babel-plugin-styled-components": "^2.1.4",
     "gatsby": "^5.13.3",
     "gatsby-plugin-image": "^3.13.1",
-    "gatsby-plugin-manifest": "^5.13.1",
     "gatsby-plugin-sharp": "^5.13.1",
-    "gatsby-plugin-styled-components": "^6.13.1",
     "gatsby-source-filesystem": "^5.13.1",
     "gatsby-transformer-sharp": "^5.13.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^6.1.11",
-    "styled-icons": "^10.47.0",
-    "styled-media-query": "^2.1.2"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "gh-pages": "^6.1.1",
@@ -36,14 +28,6 @@
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
     "start": "gatsby develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "clean": "gatsby clean"
   }
 }

@@ -1,58 +1,75 @@
 import * as React from "react"
+import { graphql } from "gatsby"
 
-import { graphql } from 'gatsby'
+import "../styles/global.css"
 
-import Layout from "../components/layout"
-import GlobalStyles from "../styles/global"
 import Seo from "../components/seo"
-import Services from "../components/Services"
 import TopBar from "../components/TopBar"
-import About from "../components/About"
-import Testimony from "../components/Testimony"
+import Hero from "../components/Hero"
+import PraVoce from "../components/PraVoce"
+import Sobre from "../components/Sobre"
+import Atendimento from "../components/Atendimento"
+import Abordagem from "../components/Abordagem"
+import Confianca from "../components/Confianca"
 import Faq from "../components/Faq"
-import Contact from "../components/Contact"
-import Footer from "../components/Footer"
-import Phrase from "../components/Phrase"
-import WhatsAppFloating from "../components/WhatsAppFloating"
-import TherapyOnline from "../components/TherapyOnline"
+import Guias from "../components/Guias"
+import CtaFinal from "../components/CtaFinal"
+import Rodape from "../components/Rodape"
 
-const IndexPage = ({ data }) => {
+const IndexPage = () => {
+  React.useEffect(() => {
+    const elementos = document.querySelectorAll(".reveal")
+    if (!("IntersectionObserver" in window)) {
+      elementos.forEach(el => el.classList.add("visivel"))
+      return
+    }
+    const observador = new IntersectionObserver(
+      entradas => {
+        entradas.forEach(entrada => {
+          if (entrada.isIntersecting) {
+            entrada.target.classList.add("visivel")
+            observador.unobserve(entrada.target)
+          }
+        })
+      },
+      { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+    )
+    elementos.forEach(el => observador.observe(el))
+    return () => observador.disconnect()
+  }, [])
 
-    const title = data.site.siteMetadata.title
-    const description = data.site.siteMetadata.description
-    const author = data.site.siteMetadata.author
-    const email = data.site.siteMetadata.email
-    const instagram = data.site.siteMetadata.instagram
-    const keywords = data.site.siteMetadata.keywords
-
-    return (
-      <>
-        <Seo
-          title={`${author} | ${title}`}
-          description={`${description}`}
-          keywords={keywords.join(", ")}
-        />
-      <Layout>
-        <GlobalStyles />
-        <TopBar />
-        <Phrase />
-        <About />
-        <Services />
-        <TherapyOnline />
-        <Testimony />
+  return (
+    <>
+      <TopBar />
+      <main>
+        <Hero />
+        <PraVoce />
+        <Sobre />
+        <Atendimento />
+        <Abordagem />
+        <Confianca />
         <Faq />
-        <Contact />
-        <Footer 
-          email={email}
-          instagram={instagram}
-        />
-        <WhatsAppFloating />
-      </Layout>
+        <Guias />
+        <CtaFinal />
+      </main>
+      <Rodape />
     </>
   )
 }
 
 export default IndexPage
+
+export const Head = ({ data }) => {
+  const { title, description, keywords, siteUrl } = data.site.siteMetadata
+  return (
+    <Seo
+      title={title}
+      description={description}
+      keywords={keywords.join(", ")}
+      siteUrl={siteUrl}
+    />
+  )
+}
 
 export const pageQuery = graphql`
   query {
@@ -60,10 +77,7 @@ export const pageQuery = graphql`
       siteMetadata {
         title
         description
-        author
         siteUrl
-        email
-        instagram
         keywords
       }
     }
