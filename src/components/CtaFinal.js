@@ -7,6 +7,7 @@ import {
   WhatsAppIcon,
   INSTAGRAM_URL,
   INSTAGRAM_HANDLE,
+  reportWhatsAppConversion,
 } from "./whatsapp"
 
 const CtaFinal = () => (
@@ -33,6 +34,7 @@ const CtaFinal = () => (
           href={waLink(MSG_AGENDAR)}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={reportWhatsAppConversion}
         >
           <WhatsAppIcon />
           Quero agendar uma conversa

@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import logoHorizontal from "../images/logo-horizontal.png"
-import { waLink, MSG_AGENDAR } from "./whatsapp"
+import { waLink, MSG_AGENDAR, reportWhatsAppConversion } from "./whatsapp"
 
 const TopBar = () => {
   const [rolou, setRolou] = React.useState(false)
@@ -36,6 +36,7 @@ const TopBar = () => {
           href={waLink(MSG_AGENDAR)}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={reportWhatsAppConversion}
         >
           Agendar conversa
         </a>

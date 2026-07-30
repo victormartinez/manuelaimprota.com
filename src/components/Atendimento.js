@@ -2,7 +2,12 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import maeBebeLinha from "../images/mae-bebe-linha.png"
-import { waLink, MSG_PSICOTERAPIA, MSG_PARENTAL } from "./whatsapp"
+import {
+  waLink,
+  MSG_PSICOTERAPIA,
+  MSG_PARENTAL,
+  reportWhatsAppConversion,
+} from "./whatsapp"
 
 const TOTAL_SLIDES = 5
 
@@ -60,6 +65,7 @@ const Atendimento = () => {
               href={waLink(MSG_PSICOTERAPIA)}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={reportWhatsAppConversion}
             >
               Conversar no WhatsApp →
             </a>
@@ -79,6 +85,7 @@ const Atendimento = () => {
               href={waLink(MSG_PARENTAL)}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={reportWhatsAppConversion}
             >
               Conversar no WhatsApp →
             </a>

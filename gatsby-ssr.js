@@ -28,6 +28,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-N3V7MRMZ');`,
       }}
     />,
+    // Google Ads: tag base (gtag.js) + evento de conversão "Clique WhatsApp"
+    <script
+      key="gtag-src"
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=AW-16595958104"
+    />,
+    <script
+      key="gtag-init"
+      dangerouslySetInnerHTML={{
+        __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-16595958104');
+
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16595958104/hwZDCLj759gcENjyyOk9',
+      'event_callback': callback
+  });
+  return false;
+}`,
+      }}
+    />,
   ])
   setPreBodyComponents([
     <noscript

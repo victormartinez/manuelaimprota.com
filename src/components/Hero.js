@@ -1,7 +1,12 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { waLink, MSG_AGENDAR, WhatsAppIcon } from "./whatsapp"
+import {
+  waLink,
+  MSG_AGENDAR,
+  WhatsAppIcon,
+  reportWhatsAppConversion,
+} from "./whatsapp"
 
 const Hero = () => (
   <section className="hero" id="inicio">
@@ -33,6 +38,7 @@ const Hero = () => (
             href={waLink(MSG_AGENDAR)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={reportWhatsAppConversion}
           >
             <WhatsAppIcon />
             Quero agendar uma conversa

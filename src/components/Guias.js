@@ -1,6 +1,11 @@
 import * as React from "react"
 
-import { waLink, MSG_GUIA_MATERNA, MSG_GUIA_FEMININO } from "./whatsapp"
+import {
+  waLink,
+  MSG_GUIA_MATERNA,
+  MSG_GUIA_FEMININO,
+  reportWhatsAppConversion,
+} from "./whatsapp"
 
 const Guias = () => (
   <section className="s-guias" id="guias">
@@ -27,6 +32,7 @@ const Guias = () => (
             href={waLink(MSG_GUIA_MATERNA)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={reportWhatsAppConversion}
           >
             Quero receber este guia →
           </a>
@@ -44,6 +50,7 @@ const Guias = () => (
             href={waLink(MSG_GUIA_FEMININO)}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={reportWhatsAppConversion}
           >
             Quero receber este guia →
           </a>
