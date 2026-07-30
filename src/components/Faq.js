@@ -1,6 +1,6 @@
 import * as React from "react"
 
-const PERGUNTAS = [
+export const PERGUNTAS = [
   {
     pergunta: "Como funciona o atendimento online?",
     resposta:

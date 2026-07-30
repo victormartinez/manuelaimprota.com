@@ -1,7 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import "../styles/global.css"
+
+import Seo from "../components/seo"
 
 const NotFoundPage = () => (
   <main
@@ -31,9 +33,25 @@ const NotFoundPage = () => (
 
 export default NotFoundPage
 
-export const Head = () => (
-  <>
-    <title>Página não encontrada · Manuela Improta</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  </>
-)
+export const Head = ({ data }) => {
+  const { siteUrl } = data.site.siteMetadata
+  return (
+    <Seo
+      title="Página não encontrada · Manuela Improta"
+      description="O endereço que você procura não existe ou mudou de lugar."
+      siteUrl={siteUrl}
+      pathname="/404/"
+      noindex
+    />
+  )
+}
+
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        siteUrl
+      }
+    }
+  }
+`

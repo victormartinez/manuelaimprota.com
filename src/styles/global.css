@@ -6,19 +6,19 @@
 /* ---------- Fontes da marca (variable, locais) ---------- */
 @font-face {
   font-family: "Fraunces";
-  src: url("/fonts/Fraunces-Variable.ttf") format("truetype");
+  src: url("/fonts/Fraunces-Variable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
 @font-face {
   font-family: "DM Sans";
-  src: url("/fonts/DMSans-Variable.ttf") format("truetype");
+  src: url("/fonts/DMSans-Variable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
 @font-face {
   font-family: "Albert Sans";
-  src: url("/fonts/AlbertSans-Variable.ttf") format("truetype");
+  src: url("/fonts/AlbertSans-Variable.woff2") format("woff2");
   font-weight: 100 900;
   font-display: swap;
 }
