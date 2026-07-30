@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://manuelaimprota.com/sitemap-index.xml
+Host: https://manuelaimprota.com
