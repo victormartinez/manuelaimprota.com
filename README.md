@@ -30,6 +30,17 @@ ficam centralizados em `src/components/whatsapp.js`.
 npm run develop   # dev server em localhost:8000
 npm run build     # build de produção em public/
 npm run serve     # serve o build local
-npm run deploy    # build + publica no GitHub Pages (gh-pages, com CNAME)
 npm run format    # prettier
 ```
+
+## Deploy
+
+O site é hospedado no [Netlify](https://www.netlify.com/), que faz o build e
+publica a cada push em `main`:
+
+```shell
+git push origin main
+```
+
+A publicação leva alguns minutos. Build, branch e domínio são configurados no
+painel do Netlify (não há `netlify.toml` no repositório).
