@@ -3,8 +3,16 @@ import * as React from "react"
 export const waLink = message =>
   `https://wa.me/5571999889229?text=${encodeURIComponent(message)}`
 
-export const MSG_AGENDAR =
-  "Olá, Manuela! Vim pelo site e quero agendar uma conversa."
+/* Um texto por botão de contato geral: o trecho inicial de cada um mostra, na
+   mensagem que chega, de qual botão ela veio */
+export const MSG_TOPO =
+  "Olá, Manuela! Vim pelo site e gostaria de conversar com você."
+export const MSG_HERO =
+  "Olá, Manuela! Conheci seu trabalho pelo site e gostaria de saber mais."
+export const MSG_FAQ_PRIMEIRA_CONVERSA =
+  "Olá, Manuela! Li sobre a primeira conversa no seu site e gostaria de conversar."
+export const MSG_CTA_FINAL =
+  "Olá, Manuela! Li seu site com calma e quero dar o primeiro passo."
 export const MSG_PSICOTERAPIA =
   "Olá, Manuela! Quero saber mais sobre a psicoterapia individual."
 export const MSG_PARENTAL =

@@ -3,7 +3,7 @@ import * as React from "react"
 import monograma from "../images/monograma.png"
 import {
   waLink,
-  MSG_AGENDAR,
+  MSG_CTA_FINAL,
   WhatsAppIcon,
   INSTAGRAM_URL,
   INSTAGRAM_HANDLE,
@@ -31,7 +31,7 @@ const CtaFinal = () => (
       <div className="hero-ctas cta-centro reveal">
         <a
           className="btn btn-primario"
-          href={waLink(MSG_AGENDAR)}
+          href={waLink(MSG_CTA_FINAL)}
           target="_blank"
           rel="noopener noreferrer"
           onClick={reportWhatsAppConversion}

@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import {
   waLink,
-  MSG_AGENDAR,
+  MSG_HERO,
   WhatsAppIcon,
   reportWhatsAppConversion,
 } from "./whatsapp"
@@ -35,7 +35,7 @@ const Hero = () => (
         <div className="hero-ctas">
           <a
             className="btn btn-primario"
-            href={waLink(MSG_AGENDAR)}
+            href={waLink(MSG_HERO)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={reportWhatsAppConversion}

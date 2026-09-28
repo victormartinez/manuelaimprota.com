@@ -2,7 +2,7 @@ import * as React from "react"
 
 import {
   waLink,
-  MSG_AGENDAR,
+  MSG_FAQ_PRIMEIRA_CONVERSA,
   MSG_VALORES,
   reportWhatsAppConversion,
 } from "./whatsapp"
@@ -24,7 +24,10 @@ export const PERGUNTAS = [
     pergunta: "Como é a primeira conversa?",
     resposta:
       "É pelo WhatsApp e sem compromisso: pra gente se conhecer, você tirar suas dúvidas e entender se faz sentido caminharmos juntas. Se fizer, a gente combina o melhor horário pra primeira sessão.",
-    whatsapp: { mensagem: MSG_AGENDAR, rotulo: "Conversar no WhatsApp →" },
+    whatsapp: {
+      mensagem: MSG_FAQ_PRIMEIRA_CONVERSA,
+      rotulo: "Conversar no WhatsApp →",
+    },
   },
   {
     pergunta: "Quanto custa?",
