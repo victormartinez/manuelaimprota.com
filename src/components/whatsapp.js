@@ -9,6 +9,8 @@ export const MSG_PSICOTERAPIA =
   "Olá, Manuela! Quero saber mais sobre a psicoterapia individual."
 export const MSG_PARENTAL =
   "Olá, Manuela! Quero saber mais sobre a orientação parental."
+export const MSG_VALORES =
+  "Olá, Manuela! Vim pelo site e quero saber os valores e horários."
 export const MSG_GUIA_MATERNA =
   "Olá, Manuela! Vim pelo site e quero receber o guia de boas-vindas da jornada materna."
 export const MSG_GUIA_FEMININO =

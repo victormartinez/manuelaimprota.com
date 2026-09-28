@@ -9,7 +9,6 @@ import Hero from "../components/Hero"
 import PraVoce from "../components/PraVoce"
 import Sobre from "../components/Sobre"
 import Atendimento from "../components/Atendimento"
-import Abordagem from "../components/Abordagem"
 import Confianca from "../components/Confianca"
 import Faq, { PERGUNTAS } from "../components/Faq"
 import Guias from "../components/Guias"
@@ -47,7 +46,6 @@ const IndexPage = () => {
         <PraVoce />
         <Sobre />
         <Atendimento />
-        <Abordagem />
         <Confianca />
         <Faq />
         <Guias />

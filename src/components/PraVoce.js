@@ -1,19 +1,31 @@
 import * as React from "react"
 
 const FRASES = [
-  "“Me sinto uma péssima mãe.”",
   "“Me cobro o tempo inteiro, por tudo.”",
-  "“Amo meu filho, mas sinto falta de quem eu era.”",
   "“Ando ansiosa — e nem sei bem por quê.”",
-  "“Meu parto não foi como eu sonhei.”",
+  "“Me anulo nas minhas relações pra não desagradar ninguém.”",
+  "“Me sinto uma péssima mãe.”",
   "“Cuido de todo mundo — e fico por último na minha própria lista.”",
+  "“Amo meu filho, mas sinto falta de quem eu era.”",
 ]
 
 const FASES = [
-  { titulo: "Tentante", texto: "a ansiedade da espera e dos “e se”." },
   {
-    titulo: "Gestante",
-    texto: "medos, expectativas e um corpo inteiro mudando.",
+    titulo: "Ansiedade & autocobrança",
+    texto: "a mente que não desliga e a cobrança que nunca acaba.",
+  },
+  {
+    titulo: "Relações & escolhas",
+    texto: "relacionamentos, trabalho e decisões que pesam.",
+  },
+  {
+    titulo: "Sem “jeito certo” de ser mulher",
+    texto:
+      "identidade, expectativas dos outros e o reencontro com o que você quer.",
+  },
+  {
+    titulo: "Tentante & gestante",
+    texto: "a espera, os medos e um corpo inteiro mudando.",
   },
   {
     titulo: "Puérpera",
@@ -23,21 +35,12 @@ const FASES = [
     titulo: "Mãe & mulher",
     texto: "identidade, ambivalência e a mulher além do papel de mãe.",
   },
-  {
-    titulo: "Você, além dos papéis",
-    texto: "ansiedade, autocobrança, relacionamentos e escolhas.",
-  },
-  {
-    titulo: "Sem “jeito certo” de ser mulher",
-    texto:
-      "identidade, expectativas dos outros e o reencontro com o que você quer.",
-  },
 ]
 
 const PraVoce = () => (
   <section className="s-pra-voce" id="pra-voce">
     <div className="container">
-      <p className="kicker reveal">Pra mãe. Pra mulher. Pra você.</p>
+      <p className="kicker reveal">Pra você, em qualquer fase.</p>
       <h2 className="reveal">
         Se alguma dessas frases parece sua, esse espaço é <em>seu</em>.
       </h2>
@@ -49,9 +52,10 @@ const PraVoce = () => (
         ))}
       </div>
       <p className="validacao reveal">
-        É normal sentir isso. Sentir não te torna uma mãe ruim nem uma mulher
-        fraca — <strong>te torna gente</strong>. E existe um espaço pra olhar
-        pra tudo isso sem julgamento, e com menos culpa.
+        Sentir isso não é fraqueza nem falha —{" "}
+        <strong>é sinal de que você anda carregando demais</strong>. E você não
+        precisa carregar sozinha: existe um espaço pra olhar pra tudo isso sem
+        julgamento.
       </p>
       <ul className="fases fases-6">
         {FASES.map(fase => (

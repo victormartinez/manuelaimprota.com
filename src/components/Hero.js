@@ -28,8 +28,8 @@ const Hero = () => (
         </h1>
         <p className="hero-sub">Psicoterapia perinatal &amp; feminina</p>
         <p className="hero-apoio">
-          Para mulheres em todas as fases — na jornada materna ou fora dela.
-          Ansiedade, sobrecarga, identidade, relacionamentos: com base
+          Um espaço para você, mulher, em qualquer fase da vida. Ansiedade,
+          autocobrança, sobrecarga, relacionamentos, maternidade: com base
           científica, escuta de verdade e zero julgamento.
         </p>
         <div className="hero-ctas">

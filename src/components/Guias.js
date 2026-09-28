@@ -21,23 +21,6 @@ const Guias = () => (
       </p>
       <div className="cards-servico">
         <article className="card-servico reveal">
-          <h3>Guia da jornada materna</h3>
-          <p className="card-meta">tentantes · gestantes · puérperas · mães</p>
-          <p>
-            Para quem vive (ou espera) a maternidade real: o turbilhão, a culpa,
-            as decisões — e o cuidado possível em cada fase.
-          </p>
-          <a
-            className="link-seta"
-            href={waLink(MSG_GUIA_MATERNA)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
-            Quero receber este guia →
-          </a>
-        </article>
-        <article className="card-servico reveal">
           <h3>Guia do universo feminino</h3>
           <p className="card-meta">para você, mulher — em qualquer fase</p>
           <p>
@@ -48,6 +31,23 @@ const Guias = () => (
           <a
             className="link-seta"
             href={waLink(MSG_GUIA_FEMININO)}
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={reportWhatsAppConversion}
+          >
+            Quero receber este guia →
+          </a>
+        </article>
+        <article className="card-servico reveal">
+          <h3>Guia da jornada materna</h3>
+          <p className="card-meta">tentantes · gestantes · puérperas · mães</p>
+          <p>
+            Para quem vive (ou espera) a maternidade real: o turbilhão, a culpa,
+            as decisões — e o cuidado possível em cada fase.
+          </p>
+          <a
+            className="link-seta"
+            href={waLink(MSG_GUIA_MATERNA)}
             target="_blank"
             rel="noopener noreferrer"
             onClick={reportWhatsAppConversion}

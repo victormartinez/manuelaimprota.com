@@ -10,7 +10,7 @@ exports.onRenderBody = ({
 }) => {
   setHtmlAttributes({ lang: `pt-BR` })
   setHeadComponents([
-    // Progressive enhancement: o CSS de reveal/carrossel só ativa com JS presente
+    // Progressive enhancement: o CSS de reveal só ativa com JS presente
     <script
       key="js-class"
       dangerouslySetInnerHTML={{

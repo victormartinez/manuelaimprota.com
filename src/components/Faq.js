@@ -1,5 +1,14 @@
 import * as React from "react"
 
+import {
+  waLink,
+  MSG_AGENDAR,
+  MSG_VALORES,
+  reportWhatsAppConversion,
+} from "./whatsapp"
+
+/* `resposta` também alimenta o JSON-LD (FAQPage) em pages/index.js, por isso
+   fica só texto; o link de WhatsApp vem à parte, em `whatsapp` */
 export const PERGUNTAS = [
   {
     pergunta: "Como funciona o atendimento online?",
@@ -7,24 +16,31 @@ export const PERGUNTAS = [
       "As sessões têm 50 minutos e acontecem semanalmente, por videochamada, em um espaço seguro e sigiloso. Você só precisa de um lugar tranquilo e internet. Atendo mulheres de todo o Brasil.",
   },
   {
-    pergunta: "Quanto custa?",
-    resposta:
-      "Seguindo as orientações do Conselho Federal de Psicologia, os valores não são divulgados publicamente. Me chama no WhatsApp que te conto tudo — valores, horários e como começar.",
-  },
-  {
-    pergunta: "Maternidade é o único tema?",
+    pergunta: "Preciso ser mãe para fazer terapia com você?",
     resposta:
       "Não. A psicologia feminina olha para a mulher inteira: relacionamentos, trabalho, identidade, fases da vida. A maternidade é uma das portas — não a única. Você não precisa ser mãe, nem querer ser, para esse espaço ser seu.",
   },
   {
-    pergunta: "Você atende homens?",
+    pergunta: "Como é a primeira conversa?",
     resposta:
-      "Na psicoterapia individual, atendo mulheres. Na orientação parental, sim: o espaço é para mães, pais e cuidadores.",
+      "É pelo WhatsApp e sem compromisso: pra gente se conhecer, você tirar suas dúvidas e entender se faz sentido caminharmos juntas. Se fizer, a gente combina o melhor horário pra primeira sessão.",
+    whatsapp: { mensagem: MSG_AGENDAR, rotulo: "Conversar no WhatsApp →" },
+  },
+  {
+    pergunta: "Quanto custa?",
+    resposta:
+      "Os valores e as formas de pagamento eu te passo direto no WhatsApp, junto com os horários disponíveis — é rapidinho.",
+    whatsapp: { mensagem: MSG_VALORES, rotulo: "Me chama no WhatsApp →" },
   },
   {
     pergunta: "Terapia é só pra quando a gente está mal?",
     resposta:
       "Não. Terapia também é cuidado e prevenção — um espaço pra se entender antes de a corda apertar. Você não precisa estar no fundo do poço para começar.",
+  },
+  {
+    pergunta: "Você atende homens?",
+    resposta:
+      "Na psicoterapia individual, atendo mulheres. Na orientação parental, sim: o espaço é para mães, pais e cuidadores.",
   },
 ]
 
@@ -39,7 +55,20 @@ const Faq = () => (
         {PERGUNTAS.map(item => (
           <details key={item.pergunta}>
             <summary>{item.pergunta}</summary>
-            <p>{item.resposta}</p>
+            <p>
+              {item.resposta}
+              {item.whatsapp && (
+                <a
+                  className="link-seta faq-link"
+                  href={waLink(item.whatsapp.mensagem)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={reportWhatsAppConversion}
+                >
+                  {item.whatsapp.rotulo}
+                </a>
+              )}
+            </p>
           </details>
         ))}
       </div>
