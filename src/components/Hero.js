@@ -41,7 +41,7 @@ const Hero = () => (
             onClick={reportWhatsAppConversion}
           >
             <WhatsAppIcon />
-            Quero agendar uma conversa
+            Quero conversar
           </a>
           <a className="btn btn-fantasma" href="#sobre">
             Me conhecer primeiro

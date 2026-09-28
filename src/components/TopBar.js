@@ -38,7 +38,7 @@ const TopBar = () => {
           rel="noopener noreferrer"
           onClick={reportWhatsAppConversion}
         >
-          Agendar conversa
+          Fale comigo
         </a>
       </div>
     </header>

@@ -37,7 +37,7 @@ const CtaFinal = () => (
           onClick={reportWhatsAppConversion}
         >
           <WhatsAppIcon />
-          Quero agendar uma conversa
+          Vamos conversar
         </a>
         <a
           className="btn btn-fantasma"
