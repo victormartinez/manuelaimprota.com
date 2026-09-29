@@ -1,7 +1,7 @@
 import * as React from "react"
 
 export const waLink = message =>
-  `https://wa.me/5571999889229?text=${encodeURIComponent(message)}`
+  `https://wa.me/71999889229?text=${encodeURIComponent(message)}`
 
 /* Um texto por botão, identificado pelo `data-cta`: a mensagem que chega já
    diz o que a paciente procura, e o GTM separa os cliques por seção */
