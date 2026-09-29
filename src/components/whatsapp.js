@@ -3,38 +3,51 @@ import * as React from "react"
 export const waLink = message =>
   `https://wa.me/5571999889229?text=${encodeURIComponent(message)}`
 
-/* Um texto por botão de contato geral: o trecho inicial de cada um mostra, na
-   mensagem que chega, de qual botão ela veio */
-export const MSG_TOPO =
-  "Olá, Manuela! Vim pelo site e gostaria de conversar com você."
-export const MSG_HERO =
-  "Olá, Manuela! Conheci seu trabalho pelo site e gostaria de saber mais."
-export const MSG_FAQ_PRIMEIRA_CONVERSA =
-  "Olá, Manuela! Li sobre a primeira conversa no seu site e gostaria de conversar."
-export const MSG_CTA_FINAL =
-  "Olá, Manuela! Li seu site com calma e quero dar o primeiro passo."
-export const MSG_PSICOTERAPIA =
-  "Olá, Manuela! Quero saber mais sobre a psicoterapia individual."
-export const MSG_PARENTAL =
-  "Olá, Manuela! Quero saber mais sobre a orientação parental."
-export const MSG_VALORES =
-  "Olá, Manuela! Vim pelo site e quero saber os valores e horários."
-export const MSG_GUIA_MATERNA =
-  "Olá, Manuela! Vim pelo site e quero receber o guia de boas-vindas da jornada materna."
-export const MSG_GUIA_FEMININO =
-  "Olá, Manuela! Vim pelo site e quero receber o guia de boas-vindas do universo feminino."
+/* Um texto por botão, identificado pelo `data-cta`: a mensagem que chega já
+   diz o que a paciente procura, e o GTM separa os cliques por seção */
+export const MENSAGENS = {
+  "agendar-topo":
+    "Olá, Manuela! Vi seu site e gostaria de saber como funciona a psicoterapia online, valores e horários disponíveis.",
+  "agendar-hero":
+    "Olá, Manuela! Vi seu site e gostaria de saber como funciona a psicoterapia online, valores e horários disponíveis.",
+  "servico-individual":
+    "Olá, Manuela! Vi seu site e tenho interesse em conhecer a Psicoterapia Individual para mulheres. Poderia me passar mais informações?",
+  "servico-parental":
+    "Olá, Manuela! Vi seu site e tenho interesse na Orientação Parental. Gostaria de saber como funciona e os valores.",
+  "faq-primeira-conversa":
+    "Olá, Manuela! Li sobre a primeira conversa no seu site e gostaria de conversar.",
+  "faq-preco":
+    "Olá, Manuela! Li as informações no seu site e gostaria de saber os valores das sessões e horários disponíveis.",
+  "agendar-rodape":
+    "Olá, Manuela! Li toda a sua página, me identifiquei bastante e gostaria de agendar uma primeira conversa.",
+  "guia-materno":
+    "Olá, Manuela! Vim pelo site e gostaria de receber o Guia gratuito da Jornada Materna em PDF.",
+  "guia-feminino":
+    "Olá, Manuela! Vim pelo site e gostaria de receber o Guia gratuito do Universo Feminino em PDF.",
+}
 
 export const INSTAGRAM_URL = "https://instagram.com/improtamanuela"
 export const INSTAGRAM_HANDLE = "@improtamanuela"
 
-export const reportWhatsAppConversion = () => {
-  if (
-    typeof window !== "undefined" &&
-    typeof window.gtag_report_conversion === "function"
-  ) {
+/* Conversão do Google Ads + evento `clique_whatsapp` no dataLayer, com o
+   `cta` do botão, para o GTM/GA4 */
+const reportWhatsAppClick = cta => {
+  if (typeof window === "undefined") return
+  window.dataLayer = window.dataLayer || []
+  window.dataLayer.push({ event: "clique_whatsapp", cta })
+  if (typeof window.gtag_report_conversion === "function") {
     window.gtag_report_conversion()
   }
 }
+
+/* Props de todo link de WhatsApp: <a {...whatsAppProps("faq-preco")}> */
+export const whatsAppProps = cta => ({
+  href: waLink(MENSAGENS[cta]),
+  target: "_blank",
+  rel: "noopener noreferrer",
+  "data-cta": cta,
+  onClick: () => reportWhatsAppClick(cta),
+})
 
 export const WhatsAppIcon = () => (
   <svg className="icone icone-wpp" viewBox="0 0 24 24" aria-hidden="true">

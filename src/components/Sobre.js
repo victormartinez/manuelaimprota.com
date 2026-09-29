@@ -2,7 +2,6 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import monograma from "../images/monograma.png"
-import { INSTAGRAM_HANDLE } from "./whatsapp"
 
 const Sobre = () => (
   <section className="s-sobre" id="sobre">
@@ -40,7 +39,7 @@ const Sobre = () => (
         </p>
         <p className="sobre-assinatura reveal">
           <img src={monograma} alt="" width="512" height="425" />{" "}
-          <span>{INSTAGRAM_HANDLE}</span>
+          <span>Manuela Improta</span>
         </p>
       </div>
     </div>

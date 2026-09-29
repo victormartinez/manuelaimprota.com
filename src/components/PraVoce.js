@@ -1,8 +1,8 @@
 import * as React from "react"
 
 const FRASES = [
-  "“Me cobro o tempo inteiro, por tudo.”",
-  "“Ando ansiosa — e nem sei bem por quê.”",
+  "“Me cobro perfeição em tudo — nos relacionamentos, na carreira e na vida — e ando exausta de mim mesma.”",
+  "“Dou conta do trabalho e da casa, mas por dentro sinto que vou pifar a qualquer momento.”",
   "“Me anulo nas minhas relações pra não desagradar ninguém.”",
   "“Me sinto uma péssima mãe.”",
   "“Cuido de todo mundo — e fico por último na minha própria lista.”",

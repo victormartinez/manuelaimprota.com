@@ -17,7 +17,7 @@ const Rodape = () => (
       <p className="rodape-info">
         Manuela Improta · Psicóloga Perinatal &amp; Feminina · CRP 03/30689
         <br />
-        Atendimento online · Brasil todo · Instagram e TikTok:{" "}
+        Atendimento online · Brasil todo · Instagram:{" "}
         <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
           {INSTAGRAM_HANDLE}
         </a>

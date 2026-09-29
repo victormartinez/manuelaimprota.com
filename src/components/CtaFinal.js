@@ -1,14 +1,7 @@
 import * as React from "react"
 
 import monograma from "../images/monograma.png"
-import {
-  waLink,
-  MSG_CTA_FINAL,
-  WhatsAppIcon,
-  INSTAGRAM_URL,
-  INSTAGRAM_HANDLE,
-  reportWhatsAppConversion,
-} from "./whatsapp"
+import { whatsAppProps, WhatsAppIcon } from "./whatsapp"
 
 const CtaFinal = () => (
   <section className="s-cta" id="contato">
@@ -29,27 +22,9 @@ const CtaFinal = () => (
         sem pressa.
       </p>
       <div className="hero-ctas cta-centro reveal">
-        <a
-          className="btn btn-primario"
-          href={waLink(MSG_CTA_FINAL)}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={reportWhatsAppConversion}
-        >
+        <a className="btn btn-primario" {...whatsAppProps("agendar-rodape")}>
           <WhatsAppIcon />
           Vamos conversar
-        </a>
-        <a
-          className="btn btn-fantasma"
-          href={INSTAGRAM_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <svg className="icone" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-4 8" />
-            <circle cx="12" cy="12" r="4" />
-          </svg>
-          me acompanha no <strong>{INSTAGRAM_HANDLE}</strong>
         </a>
       </div>
     </div>

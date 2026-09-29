@@ -1,7 +1,5 @@
 import * as React from "react"
 
-import { INSTAGRAM_URL, INSTAGRAM_HANDLE } from "./whatsapp"
-
 /* Prova social ética — Res. CFP 011/2018 veda depoimento de paciente */
 const Confianca = () => (
   <section className="s-confianca" id="confianca">
@@ -42,11 +40,8 @@ const Confianca = () => (
         <li className="fase reveal">
           <h3>Trabalho às claras</h3>
           <p>
-            meu jeito de pensar e acolher está público no{" "}
-            <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">
-              {INSTAGRAM_HANDLE}
-            </a>{" "}
-            — me conheça antes da primeira conversa.
+            sessões de 50 minutos, recibo para reembolso do convênio e tudo
+            explicado antes de começar — sem letra miúda.
           </p>
         </li>
       </ul>

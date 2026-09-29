@@ -1,11 +1,6 @@
 import * as React from "react"
 
-import {
-  waLink,
-  MSG_FAQ_PRIMEIRA_CONVERSA,
-  MSG_VALORES,
-  reportWhatsAppConversion,
-} from "./whatsapp"
+import { whatsAppProps } from "./whatsapp"
 
 /* `resposta` também alimenta o JSON-LD (FAQPage) em pages/index.js, por isso
    fica só texto; o link de WhatsApp vem à parte, em `whatsapp` */
@@ -25,15 +20,20 @@ export const PERGUNTAS = [
     resposta:
       "É pelo WhatsApp e sem compromisso: pra gente se conhecer, você tirar suas dúvidas e entender se faz sentido caminharmos juntas. Se fizer, a gente combina o melhor horário pra primeira sessão.",
     whatsapp: {
-      mensagem: MSG_FAQ_PRIMEIRA_CONVERSA,
+      cta: "faq-primeira-conversa",
       rotulo: "Conversar no WhatsApp →",
     },
   },
   {
     pergunta: "Quanto custa?",
     resposta:
-      "Os valores e as formas de pagamento eu te passo direto no WhatsApp, junto com os horários disponíveis — é rapidinho.",
-    whatsapp: { mensagem: MSG_VALORES, rotulo: "Me chama no WhatsApp →" },
+      "Seguindo as orientações do Conselho Federal de Psicologia (CFP), os valores das sessões particulares não são divulgados publicamente. Os atendimentos podem ser feitos de forma avulsa ou em pacotes mensais, e emito recibo para que você solicite reembolso no seu plano de saúde (caso seu convênio ofereça livre escolha). Me chama no WhatsApp que te explico os valores e horários disponíveis.",
+    whatsapp: { cta: "faq-preco", rotulo: "Me chama no WhatsApp →" },
+  },
+  {
+    pergunta: "Você atende por plano de saúde?",
+    resposta:
+      "Os atendimentos são particulares, o que garante sessões de 50 minutos reais, acompanhamento personalizado e sigilo no seu ritmo. Porém, se você tem plano de saúde com modalidade de reembolso, eu emito o recibo necessário para você ser ressarcida parcial ou integralmente pelo seu convênio.",
   },
   {
     pergunta: "Terapia é só pra quando a gente está mal?",
@@ -63,10 +63,7 @@ const Faq = () => (
               {item.whatsapp && (
                 <a
                   className="link-seta faq-link"
-                  href={waLink(item.whatsapp.mensagem)}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={reportWhatsAppConversion}
+                  {...whatsAppProps(item.whatsapp.cta)}
                 >
                   {item.whatsapp.rotulo}
                 </a>

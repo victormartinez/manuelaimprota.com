@@ -1,12 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import {
-  waLink,
-  MSG_HERO,
-  WhatsAppIcon,
-  reportWhatsAppConversion,
-} from "./whatsapp"
+import { whatsAppProps, WhatsAppIcon } from "./whatsapp"
 
 const Hero = () => (
   <section className="hero" id="inicio">
@@ -33,13 +28,7 @@ const Hero = () => (
           científica, escuta de verdade e zero julgamento.
         </p>
         <div className="hero-ctas">
-          <a
-            className="btn btn-primario"
-            href={waLink(MSG_HERO)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
+          <a className="btn btn-primario" {...whatsAppProps("agendar-hero")}>
             <WhatsAppIcon />
             Quero conversar
           </a>
@@ -52,7 +41,8 @@ const Hero = () => (
           </a>
         </div>
         <p className="hero-micro">
-          Primeira conversa sem compromisso — direto no WhatsApp.
+          Primeira conversa sem compromisso no WhatsApp · Atendimento
+          particular, com recibo para reembolso do convênio.
         </p>
       </div>
     </div>

@@ -1,11 +1,6 @@
 import * as React from "react"
 
-import {
-  waLink,
-  MSG_GUIA_MATERNA,
-  MSG_GUIA_FEMININO,
-  reportWhatsAppConversion,
-} from "./whatsapp"
+import { whatsAppProps } from "./whatsapp"
 
 const Guias = () => (
   <section className="s-guias" id="guias">
@@ -28,13 +23,7 @@ const Guias = () => (
             relacionamentos, escolhas — sem a maternidade precisar estar no
             centro.
           </p>
-          <a
-            className="link-seta"
-            href={waLink(MSG_GUIA_FEMININO)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
+          <a className="link-seta" {...whatsAppProps("guia-feminino")}>
             Quero receber este guia →
           </a>
         </article>
@@ -45,13 +34,7 @@ const Guias = () => (
             Para quem vive (ou espera) a maternidade real: o turbilhão, a culpa,
             as decisões — e o cuidado possível em cada fase.
           </p>
-          <a
-            className="link-seta"
-            href={waLink(MSG_GUIA_MATERNA)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
+          <a className="link-seta" {...whatsAppProps("guia-materno")}>
             Quero receber este guia →
           </a>
         </article>

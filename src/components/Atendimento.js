@@ -1,12 +1,7 @@
 import * as React from "react"
 
 import maeBebeLinha from "../images/mae-bebe-linha.png"
-import {
-  waLink,
-  MSG_PSICOTERAPIA,
-  MSG_PARENTAL,
-  reportWhatsAppConversion,
-} from "./whatsapp"
+import { whatsAppProps } from "./whatsapp"
 
 const Atendimento = () => (
   <section className="s-atendimento" id="atendimento">
@@ -34,13 +29,7 @@ const Atendimento = () => (
             Tudo cabe aqui.
           </p>
           <p className="card-rodape">Atendimento online · Brasil todo</p>
-          <a
-            className="link-seta"
-            href={waLink(MSG_PSICOTERAPIA)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
+          <a className="link-seta" {...whatsAppProps("servico-individual")}>
             Conversar no WhatsApp →
           </a>
         </article>
@@ -54,13 +43,7 @@ const Atendimento = () => (
             formato em que atendo também os pais.
           </p>
           <p className="card-rodape">Atendimento online · Brasil todo</p>
-          <a
-            className="link-seta"
-            href={waLink(MSG_PARENTAL)}
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={reportWhatsAppConversion}
-          >
+          <a className="link-seta" {...whatsAppProps("servico-parental")}>
             Conversar no WhatsApp →
           </a>
         </article>

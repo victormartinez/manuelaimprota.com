@@ -1,7 +1,7 @@
 import * as React from "react"
 
 import logoHorizontal from "../images/logo-horizontal.png"
-import { waLink, MSG_TOPO, reportWhatsAppConversion } from "./whatsapp"
+import { whatsAppProps } from "./whatsapp"
 
 const TopBar = () => {
   const [rolou, setRolou] = React.useState(false)
@@ -33,10 +33,7 @@ const TopBar = () => {
         </nav>
         <a
           className="btn btn-primario btn-topo"
-          href={waLink(MSG_TOPO)}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={reportWhatsAppConversion}
+          {...whatsAppProps("agendar-topo")}
         >
           Fale comigo
         </a>
