@@ -40,11 +40,6 @@ export const PERGUNTAS = [
     resposta:
       "Não. Terapia também é cuidado e prevenção — um espaço pra se entender antes de a corda apertar. Você não precisa estar no fundo do poço para começar.",
   },
-  {
-    pergunta: "Você atende homens?",
-    resposta:
-      "Na psicoterapia individual, atendo mulheres. Na orientação parental, sim: o espaço é para mães, pais e cuidadores.",
-  },
 ]
 
 const Faq = () => (

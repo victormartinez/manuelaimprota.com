@@ -9,8 +9,8 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Manuela Improta — Psicóloga Perinatal & Feminina · Online, Brasil todo`,
-    description: `Psicoterapia online para mulheres — na maternidade e no universo feminino — e orientação parental. Base científica, zero julgamento. CRP 03/30689.`,
+    title: `Manuela Improta — Psicóloga online · Saúde mental para mulheres`,
+    description: `Psicoterapia online para mulheres: ansiedade, autocobrança e relacionamentos. Acompanhamento perinatal para tentantes, gestantes e puérperas. CRP 03/30689.`,
     author: `Manuela Improta`,
     siteUrl: `https://manuelaimprota.com`,
     instagram: `https://instagram.com/improtamanuela`,
@@ -23,7 +23,8 @@ module.exports = {
       "gestante",
       "puérpera",
       "pós-parto",
-      "orientação parental",
+      "acompanhamento perinatal",
+      "saúde mental da mulher",
       "terapia online",
       "psicoterapia",
       "saúde mental",
@@ -46,9 +47,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Manuela Improta — Psicóloga Perinatal & Feminina`,
+        name: `Manuela Improta — Saúde mental para mulheres`,
         short_name: `Manuela Improta`,
-        description: `Psicoterapia online para mulheres — na maternidade e no universo feminino — e orientação parental.`,
+        description: `Psicoterapia online para mulheres: ansiedade, autocobrança e relacionamentos. Acompanhamento perinatal para tentantes, gestantes e puérperas.`,
         lang: `pt-BR`,
         start_url: `/`,
         background_color: `#fbf8f3`,

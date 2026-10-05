@@ -1,7 +1,7 @@
 # manuelaimprota.com
 
-Site da **Manuela Improta — Psicóloga Perinatal & Feminina** (CRP 03/30689).
-Landing page única em pt-BR: psicoterapia online para mulheres e orientação parental.
+Site da **Manuela Improta — Saúde mental para mulheres** (CRP 03/30689).
+Landing page única em pt-BR: psicoterapia online para mulheres e acompanhamento perinatal.
 
 ## Stack
 
