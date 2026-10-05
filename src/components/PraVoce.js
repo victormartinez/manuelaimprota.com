@@ -7,34 +7,8 @@ const FRASES = [
   "“Me sinto uma péssima mãe.”",
   "“Cuido de todo mundo — e fico por último na minha própria lista.”",
   "“Amo meu filho, mas sinto falta de quem eu era.”",
-]
-
-const FASES = [
-  {
-    titulo: "Ansiedade & autocobrança",
-    texto: "a mente que não desliga e a cobrança que nunca acaba.",
-  },
-  {
-    titulo: "Relações & escolhas",
-    texto: "relacionamentos, trabalho e decisões que pesam.",
-  },
-  {
-    titulo: "Sem “jeito certo” de ser mulher",
-    texto:
-      "identidade, expectativas dos outros e o reencontro com o que você quer.",
-  },
-  {
-    titulo: "Tentante & gestante",
-    texto: "a espera, os medos e um corpo inteiro mudando.",
-  },
-  {
-    titulo: "Puérpera",
-    texto: "a sobrecarga, o choro sem hora marcada e a culpa.",
-  },
-  {
-    titulo: "Mãe & mulher",
-    texto: "identidade, ambivalência e a mulher além do papel de mãe.",
-  },
+  "“Sinto que repito padrões nas minhas relações afetivas que continuam me machucando.”",
+  "“Me sinto frequentemente frustrada e não reconhecida.”",
 ]
 
 const PraVoce = () => (
@@ -57,14 +31,6 @@ const PraVoce = () => (
         precisa carregar sozinha: existe um espaço pra olhar pra tudo isso sem
         julgamento.
       </p>
-      <ul className="fases fases-6">
-        {FASES.map(fase => (
-          <li className="fase reveal" key={fase.titulo}>
-            <h3>{fase.titulo}</h3>
-            <p>{fase.texto}</p>
-          </li>
-        ))}
-      </ul>
     </div>
   </section>
 )

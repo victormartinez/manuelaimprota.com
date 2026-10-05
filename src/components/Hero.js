@@ -21,7 +21,7 @@ const Hero = () => (
         <h1>
           Você não precisa dar conta de tudo <em>sozinha</em>.
         </h1>
-        <p className="hero-sub">Psicoterapia perinatal &amp; feminina</p>
+        <p className="hero-sub">Saúde mental para mulheres</p>
         <p className="hero-apoio">
           Um espaço para você, mulher, em qualquer fase da vida. Ansiedade,
           autocobrança, sobrecarga, relacionamentos, maternidade: com base
@@ -41,8 +41,7 @@ const Hero = () => (
           </a>
         </div>
         <p className="hero-micro">
-          Primeira conversa sem compromisso no WhatsApp · Atendimento
-          particular, com recibo para reembolso do convênio.
+          Me fale sobre você sem compromisso no WhatsApp.
         </p>
       </div>
     </div>

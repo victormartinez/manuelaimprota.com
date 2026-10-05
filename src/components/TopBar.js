@@ -19,9 +19,9 @@ const TopBar = () => {
         <a className="topo-logo" href="#inicio">
           <img
             src={logoHorizontal}
-            alt="Manuela Improta — Psicóloga Perinatal & Feminina"
-            width="1037"
-            height="162"
+            alt="Manuela Improta — Saúde mental para mulheres"
+            width="1021"
+            height="151"
           />
         </a>
         <nav className="topo-nav" aria-label="Navegação principal">

@@ -23,10 +23,10 @@ const Atendimento = () => (
           <h3>Psicoterapia individual</h3>
           <p className="card-meta">para mulheres · online</p>
           <p>
-            Um espaço semanal só seu, pra olhar pra você com calma: ansiedade,
-            autocobrança, relacionamentos, trabalho, identidade. E também pra
-            quem vive a jornada materna — tentante, gestante, puérpera ou mãe.
-            Tudo cabe aqui.
+            Um espaço semanal só seu, pra olhar pra você com calma. Um lugar
+            para acolher a ansiedade e a autocobrança, repensar seus
+            relacionamentos e lidar com os desafios e a falta de reconhecimento
+            nas esferas da vida. A sua identidade inteira cabe aqui.
           </p>
           <p className="card-rodape">Atendimento online · Brasil todo</p>
           <a className="link-seta" {...whatsAppProps("servico-individual")}>
@@ -34,16 +34,17 @@ const Atendimento = () => (
           </a>
         </article>
         <article className="card-servico reveal">
-          <h3>Orientação parental</h3>
-          <p className="card-meta">para mães, pais e cuidadores · online</p>
+          <h3>Acompanhamento perinatal</h3>
+          <p className="card-meta">
+            para tentantes, gestantes, puérperas e mães
+          </p>
           <p>
-            Um espaço para destravar as dúvidas do dia a dia com seu filho:
-            rotina, limites, birras, vínculo. Sem receita pronta — orientação
-            com base científica para o seu contexto de família. É o único
-            formato em que atendo também os pais.
+            Um porto seguro para a sua jornada materna, seja qual for a fase
+            dela. Acolhimento profundo para os medos, o luto, a culpa e as
+            intensas transformações de identidade que a maternidade traz.
           </p>
           <p className="card-rodape">Atendimento online · Brasil todo</p>
-          <a className="link-seta" {...whatsAppProps("servico-parental")}>
+          <a className="link-seta" {...whatsAppProps("servico-perinatal")}>
             Conversar no WhatsApp →
           </a>
         </article>

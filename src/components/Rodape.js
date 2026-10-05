@@ -9,13 +9,13 @@ const Rodape = () => (
       <img
         className="rodape-logo"
         src={logoHorizontal}
-        alt="Manuela Improta — Psicóloga Perinatal & Feminina"
-        width="1037"
-        height="162"
+        alt="Manuela Improta — Saúde mental para mulheres"
+        width="1021"
+        height="151"
         loading="lazy"
       />
       <p className="rodape-info">
-        Manuela Improta · Psicóloga Perinatal &amp; Feminina · CRP 03/30689
+        Manuela Improta · Saúde mental para mulheres · CRP 03/30689
         <br />
         Atendimento online · Brasil todo · Instagram:{" "}
         <a href={INSTAGRAM_URL} target="_blank" rel="noopener noreferrer">

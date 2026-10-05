@@ -71,7 +71,7 @@ export const Head = ({ data }) => {
     sameAs: [INSTAGRAM_URL],
     areaServed: { "@type": "Country", name: "Brasil" },
     availableLanguage: "pt-BR",
-    serviceType: ["Psicoterapia individual", "Orientação parental"],
+    serviceType: ["Psicoterapia individual", "Acompanhamento perinatal"],
     founder: {
       "@type": "Person",
       name: "Manuela Improta",

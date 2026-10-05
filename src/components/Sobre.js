@@ -21,20 +21,22 @@ const Sobre = () => (
           Psicóloga de base junguiana. Mulher na <em>vida real</em>.
         </h2>
         <p className="reveal">
-          Sou a Manuela Improta, psicóloga (CRP 03/30689). Atendo mulheres em
-          todas as fases — nas questões do universo feminino e na jornada
-          materna — e, como mulher e mãe do Henrique, vivo na prática muito do
-          que escuto no consultório.
+          Sou a Manuela Improta, psicóloga (CRP 03/30689). Na prática clínica,
+          me dedico a ser uma rede de apoio segura para lidarmos com os mais
+          diversos dilemas que podem atravessar a sua rotina: a ansiedade
+          silenciosa, a sobrecarga de tentar dar conta de tudo, as transições de
+          carreira e as dinâmicas dos seus relacionamentos.
         </p>
         <p className="reveal">
           No meu trabalho, a base científica anda junto com a vida real. Nada de
-          fórmula pronta, nada de “jeito certo” de ser mulher ou de maternar. O
-          que existe é a sua história, o seu contexto e um caminho construído
-          com você, no seu ritmo.
+          fórmula pronta, nada de “jeito certo” de ser mulher — ou de maternar,
+          para as pacientes que também acompanho nessa fase. O que existe é a
+          sua história, o seu contexto e um caminho construído com você, no seu
+          ritmo.
         </p>
         <p className="reveal">
-          Falo de vida de mulher — e de maternidade — sem romantizar e sem
-          assustar. Porque informação boa é a que alivia, e acolhimento de
+          Falo da vida e da saúde mental da mulher sem romantizar e sem
+          assustar. Porque informação boa é a que alivia — e acolhimento de
           verdade é o que não julga.
         </p>
         <p className="sobre-assinatura reveal">

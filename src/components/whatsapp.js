@@ -12,8 +12,8 @@ export const MENSAGENS = {
     "Olá, Manuela! Vi seu site e gostaria de saber como funciona a psicoterapia online, valores e horários disponíveis.",
   "servico-individual":
     "Olá, Manuela! Vi seu site e tenho interesse em conhecer a Psicoterapia Individual para mulheres. Poderia me passar mais informações?",
-  "servico-parental":
-    "Olá, Manuela! Vi seu site e tenho interesse na Orientação Parental. Gostaria de saber como funciona e os valores.",
+  "servico-perinatal":
+    "Olá, Manuela! Estava lendo o seu site sobre o acompanhamento Perinatal/Jornada Materna e gostaria de mais detalhes.",
   "faq-primeira-conversa":
     "Olá, Manuela! Li sobre a primeira conversa no seu site e gostaria de conversar.",
   "faq-preco":

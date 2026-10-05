@@ -373,7 +373,7 @@ section {
 .validacao {
   font-size: clamp(1.15rem, 0.8vw + 1rem, 1.45rem);
   max-width: 38em;
-  margin-block: 2.2rem;
+  margin-block: 2.2rem 0;
 }
 .validacao strong {
   color: var(--terracota-texto);
@@ -407,10 +407,6 @@ section {
   }
   .fases {
     grid-template-columns: repeat(4, 1fr);
-  }
-  /* 6 cards (3+3): grade 3 colunas equilibra jornada materna × universo feminino */
-  .fases-6 {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
